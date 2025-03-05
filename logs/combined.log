@@ -1,0 +1,30 @@
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T19:01:33.146Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 5","timestamp":"2025-03-05T19:02:05.380Z"}
+{"level":"info","message":"Created book: The Catcher in the Rye","timestamp":"2025-03-05T19:03:23.662Z"}
+{"level":"warn","message":"Book not found: ID 1\n","timestamp":"2025-03-05T19:04:11.834Z"}
+{"level":"warn","message":"Book not found: ID 1","timestamp":"2025-03-05T19:04:18.342Z"}
+{"level":"info","message":"Fetched book: ID 2","timestamp":"2025-03-05T19:04:21.851Z"}
+{"level":"warn","message":"Book not found: ID 3","timestamp":"2025-03-05T19:04:25.328Z"}
+{"level":"info","message":"Fetched book: ID 2","timestamp":"2025-03-05T19:04:29.020Z"}
+{"level":"warn","message":"Book not found for update: ID 1","timestamp":"2025-03-05T19:05:07.057Z"}
+{"level":"info","message":"Updated book: ID 2","timestamp":"2025-03-05T19:05:13.724Z"}
+{"level":"info","message":"Deleted book: ID 2\n","timestamp":"2025-03-05T19:05:52.812Z"}
+{"level":"warn","message":"Book not found: ID 1\n","timestamp":"2025-03-05T19:06:12.174Z"}
+{"level":"info","message":"Created book: 1984","timestamp":"2025-03-05T19:06:29.161Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T19:06:29.177Z"}
+{"level":"info","message":"Fetched book: ID 1","timestamp":"2025-03-05T19:06:29.188Z"}
+{"level":"info","message":"Updated book: ID 1","timestamp":"2025-03-05T19:06:29.197Z"}
+{"level":"info","message":"Deleted book: ID 1","timestamp":"2025-03-05T19:06:29.205Z"}
+{"level":"warn","message":"Book not found: ID 1","timestamp":"2025-03-05T19:06:29.211Z"}
+{"level":"info","message":"Created book: 1984","timestamp":"2025-03-05T19:06:38.495Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T19:06:38.510Z"}
+{"level":"info","message":"Fetched book: ID 1","timestamp":"2025-03-05T19:06:38.522Z"}
+{"level":"info","message":"Updated book: ID 1","timestamp":"2025-03-05T19:06:38.534Z"}
+{"level":"info","message":"Deleted book: ID 1","timestamp":"2025-03-05T19:06:38.543Z"}
+{"level":"warn","message":"Book not found: ID 1","timestamp":"2025-03-05T19:06:38.549Z"}
+{"level":"info","message":"Created book: 1984","timestamp":"2025-03-05T19:10:53.315Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T19:10:53.333Z"}
+{"level":"info","message":"Fetched book: ID 1","timestamp":"2025-03-05T19:10:53.340Z"}
+{"level":"info","message":"Updated book: ID 1","timestamp":"2025-03-05T19:10:53.352Z"}
+{"level":"info","message":"Deleted book: ID 1","timestamp":"2025-03-05T19:10:53.359Z"}
+{"level":"warn","message":"Book not found: ID 1","timestamp":"2025-03-05T19:10:53.365Z"}
