@@ -22,9 +22,14 @@ const Book = sequelize.define('Book', {
     genre: {
         type: DataTypes.STRING,
         allowNull: false,
+    },
+    deletedAt: {
+        type: DataTypes.DATE,
+        allowNull: true,
     }
 }, {
     timestamps: true,
+    paranoid: true, // Enables soft delete
 });
 
 module.exports = Book;

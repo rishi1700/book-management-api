@@ -1,29 +1,41 @@
 const Book = require('../models/Book');
 const logger = require('../utils/logger');
+const { Op } = require("sequelize");
 
-exports.getBooks = async (req, res, next) => {
+exports.getBooks = async (req, res) => {
     try {
-        const { page = 1, limit = 10 } = req.query;
+        const { title, genre, sortBy = "title", order = "ASC", page = 1, limit = 5 } = req.query;
+
+        let whereClause = {};
+        if (title) {
+            whereClause.title = { [Op.like]: `%${title}%` };
+        }
+        if (genre) {
+            whereClause.genre = genre;
+        }
+
         const offset = (page - 1) * limit;
-        
-        const books = await Book.findAndCountAll({
+        const { count, rows } = await Book.findAndCountAll({
+            where: whereClause,
+            order: [[sortBy, order.toUpperCase()]],
             limit: parseInt(limit),
             offset: parseInt(offset),
         });
 
-        logger.info(`Fetched books: Page ${page}, Limit ${limit}`);
-        
-        res.json({
-            totalBooks: books.count,
-            totalPages: Math.ceil(books.count / limit),
+        res.status(200).json({
+            totalBooks: count,
+            totalPages: Math.ceil(count / limit),
             currentPage: parseInt(page),
-            books: books.rows
+            books: rows,
         });
     } catch (err) {
-        logger.error("Error fetching books: " + err.message);
-        next(err);
+        console.error("Error fetching books:", err);
+        res.status(500).json({ error: "Internal server error" });
     }
 };
+
+
+
 
 exports.getBookById = async (req, res, next) => {
     try {
@@ -82,12 +94,34 @@ exports.deleteBook = async (req, res, next) => {
             return res.status(404).json({ error: 'Book not found' });
         }
 
-        await book.destroy();
-        logger.info(`Deleted book: ID ${req.params.id}`);
+        await book.destroy(); // Soft delete: sets deletedAt timestamp instead of deleting
 
-        res.json({ message: 'Book deleted' });
+        logger.info(`Soft deleted book: ID ${req.params.id}`);
+        res.json({ message: 'Book soft deleted' });
     } catch (err) {
-        logger.error("Error deleting book: " + err.message);
+        logger.error("Error soft deleting book: " + err.message);
+        next(err);
+    }
+};
+
+exports.restoreBook = async (req, res, next) => {
+    try {
+        const book = await Book.findOne({
+            where: { id: req.params.id },
+            paranoid: false // Include soft-deleted books
+        });
+
+        if (!book) {
+            logger.warn(`Book not found for restoration: ID ${req.params.id}`);
+            return res.status(404).json({ error: 'Book not found' });
+        }
+
+        await book.restore(); // Restores the soft-deleted book
+        logger.info(`Restored book: ID ${req.params.id}`);
+
+        res.json({ message: 'Book restored successfully' });
+    } catch (err) {
+        logger.error("Error restoring book: " + err.message);
         next(err);
     }
 };

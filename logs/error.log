@@ -1,0 +1,4 @@
+{"level":"error","message":"Error fetching book: Access denied for user 'root'@'localhost' (using password: YES)","timestamp":"2025-03-05T20:15:45.712Z"}
+{"level":"error","message":"Error fetching book: Unknown column 'deletedAt' in 'field list'","timestamp":"2025-03-05T20:22:42.749Z"}
+{"level":"error","message":"Error soft deleting book: Unknown column 'deletedAt' in 'field list'","timestamp":"2025-03-05T20:23:06.197Z"}
+{"level":"error","message":"Error soft deleting book: Unknown column 'deletedAt' in 'field list'","timestamp":"2025-03-05T20:23:10.552Z"}

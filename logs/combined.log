@@ -28,3 +28,1226 @@
 {"level":"info","message":"Updated book: ID 1","timestamp":"2025-03-05T19:10:53.352Z"}
 {"level":"info","message":"Deleted book: ID 1","timestamp":"2025-03-05T19:10:53.359Z"}
 {"level":"warn","message":"Book not found: ID 1","timestamp":"2025-03-05T19:10:53.365Z"}
+{"level":"error","message":"Error fetching book: Access denied for user 'root'@'localhost' (using password: YES)","timestamp":"2025-03-05T20:15:45.712Z"}
+{"level":"error","message":"Error fetching book: Unknown column 'deletedAt' in 'field list'","timestamp":"2025-03-05T20:22:42.749Z"}
+{"level":"error","message":"Error soft deleting book: Unknown column 'deletedAt' in 'field list'","timestamp":"2025-03-05T20:23:06.197Z"}
+{"level":"error","message":"Error soft deleting book: Unknown column 'deletedAt' in 'field list'","timestamp":"2025-03-05T20:23:10.552Z"}
+{"level":"warn","message":"Book not found for deletion: ID 2\n","timestamp":"2025-03-05T20:26:10.850Z"}
+{"level":"warn","message":"Book not found: ID \n","timestamp":"2025-03-05T20:26:40.295Z"}
+{"level":"warn","message":"Book not found for deletion: ID 3\n","timestamp":"2025-03-05T20:27:01.730Z"}
+{"level":"warn","message":"Book not found for deletion: ID 4\n","timestamp":"2025-03-05T20:27:04.466Z"}
+{"level":"info","message":"Created book: Test Book","timestamp":"2025-03-05T20:38:29.426Z"}
+{"level":"info","message":"Created book: The Great Gatsby","timestamp":"2025-03-05T20:42:35.252Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T20:42:45.297Z"}
+{"level":"warn","message":"Book not found: ID 1","timestamp":"2025-03-05T20:42:55.893Z"}
+{"level":"info","message":"Fetched book: ID 2","timestamp":"2025-03-05T20:43:01.371Z"}
+{"level":"warn","message":"Book not found for update: ID 1","timestamp":"2025-03-05T20:43:14.838Z"}
+{"level":"info","message":"Updated book: ID 2","timestamp":"2025-03-05T20:43:43.254Z"}
+{"level":"info","message":"Soft deleted book: ID 2","timestamp":"2025-03-05T20:43:54.281Z"}
+{"level":"warn","message":"Book not found: ID 2","timestamp":"2025-03-05T20:44:52.656Z"}
+{"level":"info","message":"Restored book: ID 2","timestamp":"2025-03-05T20:45:05.126Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 5","timestamp":"2025-03-05T20:45:26.371Z"}
+{"level":"info","message":"Created book: 1984","timestamp":"2025-03-05T20:45:54.246Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T20:45:54.261Z"}
+{"level":"info","message":"Fetched book: ID 1","timestamp":"2025-03-05T20:45:54.269Z"}
+{"level":"info","message":"Updated book: ID 1","timestamp":"2025-03-05T20:45:54.279Z"}
+{"level":"info","message":"Soft deleted book: ID 1","timestamp":"2025-03-05T20:45:54.288Z"}
+{"level":"warn","message":"Book not found: ID 1","timestamp":"2025-03-05T20:45:54.293Z"}
+{"level":"info","message":"Restored book: ID 1","timestamp":"2025-03-05T20:45:54.301Z"}
+{"level":"info","message":"Created book: The Catcher in the Rye","timestamp":"2025-03-05T20:48:03.632Z"}
+{"level":"info","message":"Created book: The Catcher in the Rye","timestamp":"2025-03-05T20:50:30.727Z"}
+{"level":"info","message":"Created book: To Kill a Mockingbird","timestamp":"2025-03-05T20:55:42.679Z"}
+{"level":"info","message":"Created book: 1984","timestamp":"2025-03-05T20:55:50.183Z"}
+{"level":"info","message":"Created book: The Great Gatsby","timestamp":"2025-03-05T20:55:58.470Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T20:56:09.368Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.195Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.212Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.222Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.232Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.243Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.252Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.260Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.269Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.278Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.287Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.296Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.304Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.313Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.322Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.331Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.339Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.348Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.356Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.365Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.381Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.390Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.400Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.413Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.421Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.429Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.438Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.447Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.455Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.464Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.472Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.481Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.489Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.498Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.506Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.514Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.523Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.532Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.540Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.549Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.557Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.565Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.574Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.583Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.591Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.599Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.608Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.617Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.625Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.634Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.642Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.651Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.660Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.669Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.678Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.686Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.695Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.703Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.712Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.721Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.729Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.738Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.746Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.755Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.765Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.774Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.783Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.791Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.799Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.808Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.817Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.825Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.833Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.842Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.851Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.860Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.869Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.877Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.885Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.894Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.902Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.910Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.918Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.927Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.936Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.944Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.952Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.960Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.969Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.977Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.986Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:25.994Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:26.003Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:26.011Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:26.020Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:26.028Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:26.036Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:26.045Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:26.054Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:26.062Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:26.070Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:26.079Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:26.087Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:26.096Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:26.105Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:15:26.114Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:35.850Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:35.869Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:35.880Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:35.890Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:35.900Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:35.910Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:35.918Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:35.927Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:35.936Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:35.946Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:35.955Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:35.964Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:35.973Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:35.982Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:35.991Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:35.999Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.008Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.019Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.027Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.037Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.046Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.055Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.063Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.072Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.081Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.090Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.098Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.106Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.115Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.124Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.132Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.141Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.149Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.157Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.166Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.174Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.183Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.191Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.199Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.208Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.216Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.225Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.233Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.241Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.250Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.259Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.267Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.275Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.283Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.292Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.300Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.309Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.317Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.325Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.334Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.342Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.350Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.358Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.366Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.374Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.383Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.391Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.399Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.407Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.416Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.424Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.432Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.441Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.449Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.458Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.466Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.474Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.482Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.491Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.499Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.507Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.516Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.524Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.532Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.541Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.550Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.558Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.568Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.577Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.585Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.595Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.603Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.612Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.621Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.630Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.638Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.646Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.654Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.662Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.670Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.678Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.686Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.695Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.703Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:17:36.711Z"}
+{"level":"info","message":"Created book: 1984","timestamp":"2025-03-05T21:24:26.945Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:26.963Z"}
+{"level":"info","message":"Fetched book: ID 1","timestamp":"2025-03-05T21:24:26.972Z"}
+{"level":"info","message":"Updated book: ID 1","timestamp":"2025-03-05T21:24:26.983Z"}
+{"level":"info","message":"Soft deleted book: ID 1","timestamp":"2025-03-05T21:24:26.993Z"}
+{"level":"warn","message":"Book not found: ID 1","timestamp":"2025-03-05T21:24:26.999Z"}
+{"level":"info","message":"Restored book: ID 1","timestamp":"2025-03-05T21:24:27.007Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.015Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.021Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.026Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.031Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.036Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.041Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.046Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.051Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.056Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.061Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.066Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.071Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.076Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.081Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.086Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.090Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.095Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.100Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.105Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.110Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.114Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.119Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.124Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.129Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.134Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.138Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.143Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.148Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.153Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.157Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.161Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.166Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.171Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.175Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.179Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.184Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.189Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.193Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.198Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.202Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.206Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.212Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.216Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.221Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.225Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.229Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.234Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.238Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.243Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.248Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.252Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.257Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.261Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.266Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.270Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.274Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.278Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.283Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.287Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.293Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.297Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.301Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.305Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.310Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.314Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.319Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.323Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.328Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.332Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.336Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.340Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.345Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.349Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.354Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.358Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.363Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.367Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.371Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.376Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.380Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.384Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.388Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.393Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.397Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.402Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.406Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.411Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.416Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.421Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.426Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.430Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.434Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:24:27.439Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.234Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.250Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.259Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.269Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.279Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.289Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.298Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.307Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.317Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.326Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.335Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.355Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.364Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.373Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.381Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.390Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.399Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.408Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.416Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.425Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.434Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.442Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.450Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.459Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.467Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.476Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.485Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.493Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.502Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.511Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.521Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.529Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.537Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.545Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.554Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.562Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.570Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.579Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.587Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.595Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.604Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.612Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.621Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.629Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.637Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.645Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.654Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.662Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.670Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.679Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.687Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.696Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.704Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.712Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.721Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.729Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.737Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.746Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.754Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.763Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.771Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.780Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.788Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.796Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.805Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.813Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.821Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.829Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.837Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.846Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.854Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.862Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.871Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.881Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.890Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.899Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.910Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.920Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.931Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.944Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.959Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.969Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.977Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.986Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:25.995Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:26.003Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:26.012Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:26.020Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:26.028Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:26.037Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:26.045Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:26.053Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:26.061Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:26.069Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:26.078Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:26.086Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:26.094Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:26.102Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:26.111Z"}
+{"level":"info","message":"Fetched books: Page 1, Limit 10","timestamp":"2025-03-05T21:28:26.119Z"}
+{"level":"warn","message":"Rate limit exceeded: ::1 tried to access /api/books","timestamp":"2025-03-05T21:28:26.126Z"}
+{"level":"warn","message":"Rate limit exceeded: ::1 tried to access /api/books","timestamp":"2025-03-05T21:28:26.133Z"}
+{"level":"warn","message":"Rate limit exceeded: ::1 tried to access /api/books","timestamp":"2025-03-05T21:28:26.140Z"}
+{"level":"warn","message":"Rate limit exceeded: ::1 tried to access /api/books","timestamp":"2025-03-05T21:28:26.148Z"}
+{"level":"warn","message":"Rate limit exceeded: ::1 tried to access /api/books","timestamp":"2025-03-05T21:28:26.155Z"}
+{"level":"info","message":"Created book: Brave New World","timestamp":"2025-03-05T22:02:12.533Z"}
+{"level":"warn","message":"Book not found: ID undefined","timestamp":"2025-03-05T22:14:45.573Z"}
+{"level":"warn","message":"Book not found: ID undefined","timestamp":"2025-03-05T22:14:45.589Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:14:45.978Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:14:45.982Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:14:45.986Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:14:45.989Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:14:45.993Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:14:45.996Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:14:45.999Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:14:46.003Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:14:46.006Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:14:46.010Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:14:46.014Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:14:46.017Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:14:46.020Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?sortBy=title&order=ASC","timestamp":"2025-03-05T22:14:46.025Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?genre=Classic","timestamp":"2025-03-05T22:14:46.029Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?title=great","timestamp":"2025-03-05T22:14:46.033Z"}
+{"level":"warn","message":"Book not found: ID undefined","timestamp":"2025-03-05T22:14:57.188Z"}
+{"level":"warn","message":"Book not found: ID undefined","timestamp":"2025-03-05T22:14:57.210Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:14:57.584Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:14:57.588Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:14:57.592Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:14:57.598Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:14:57.601Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:14:57.604Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:14:57.607Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:14:57.610Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:14:57.614Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:14:57.617Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:14:57.620Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:14:57.624Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:14:57.627Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?sortBy=title&order=ASC","timestamp":"2025-03-05T22:14:57.633Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?genre=Classic","timestamp":"2025-03-05T22:14:57.637Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?title=great","timestamp":"2025-03-05T22:14:57.642Z"}
+{"level":"warn","message":"Book not found: ID undefined","timestamp":"2025-03-05T22:20:21.662Z"}
+{"level":"warn","message":"Book not found: ID undefined","timestamp":"2025-03-05T22:20:21.683Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:20:22.036Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:20:22.040Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:20:22.043Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:20:22.047Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:20:22.050Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:20:22.053Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:20:22.056Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:20:22.059Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:20:22.063Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:20:22.066Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:20:22.069Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:20:22.073Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:20:22.077Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:20:22.080Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:20:22.083Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?sortBy=title&order=ASC","timestamp":"2025-03-05T22:20:22.088Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?genre=Classic","timestamp":"2025-03-05T22:20:22.092Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?title=great","timestamp":"2025-03-05T22:20:22.097Z"}
+{"level":"info","message":"Created book: 1984","timestamp":"2025-03-05T22:35:58.055Z"}
+{"level":"info","message":"Fetched book: ID 1","timestamp":"2025-03-05T22:35:58.071Z"}
+{"level":"info","message":"Updated book: ID 1","timestamp":"2025-03-05T22:35:58.082Z"}
+{"level":"info","message":"Soft deleted book: ID 1","timestamp":"2025-03-05T22:35:58.091Z"}
+{"level":"warn","message":"Book not found: ID 1","timestamp":"2025-03-05T22:35:58.097Z"}
+{"level":"info","message":"Restored book: ID 1","timestamp":"2025-03-05T22:35:58.104Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:35:58.444Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:35:58.448Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:35:58.451Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:35:58.454Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:35:58.457Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:35:58.460Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:35:58.465Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:35:58.469Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:35:58.472Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:35:58.475Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:35:58.478Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:35:58.481Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:35:58.485Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:35:58.488Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:35:58.491Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?sortBy=title&order=ASC","timestamp":"2025-03-05T22:35:58.496Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?genre=Classic","timestamp":"2025-03-05T22:35:58.501Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?title=great","timestamp":"2025-03-05T22:35:58.505Z"}
+{"level":"info","message":"Created book: 1984","timestamp":"2025-03-05T22:39:19.582Z"}
+{"level":"info","message":"Fetched book: ID 1","timestamp":"2025-03-05T22:39:19.598Z"}
+{"level":"info","message":"Updated book: ID 1","timestamp":"2025-03-05T22:39:19.609Z"}
+{"level":"info","message":"Soft deleted book: ID 1","timestamp":"2025-03-05T22:39:19.617Z"}
+{"level":"warn","message":"Book not found: ID 1","timestamp":"2025-03-05T22:39:19.623Z"}
+{"level":"info","message":"Restored book: ID 1","timestamp":"2025-03-05T22:39:19.632Z"}
+{"level":"info","message":"Created book: 1984","timestamp":"2025-03-05T22:44:50.545Z"}
+{"level":"info","message":"Fetched book: ID 1","timestamp":"2025-03-05T22:44:50.562Z"}
+{"level":"info","message":"Updated book: ID 1","timestamp":"2025-03-05T22:44:50.570Z"}
+{"level":"info","message":"Soft deleted book: ID 1","timestamp":"2025-03-05T22:44:50.579Z"}
+{"level":"warn","message":"Book not found: ID 1","timestamp":"2025-03-05T22:44:50.585Z"}
+{"level":"info","message":"Restored book: ID 1","timestamp":"2025-03-05T22:44:50.593Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:44:50.938Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:44:50.942Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:44:50.945Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:44:50.948Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:44:50.951Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:44:50.955Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:44:50.959Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:44:50.962Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:44:50.965Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:44:50.968Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:44:50.971Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:44:50.974Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:44:50.978Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:44:50.981Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:44:50.984Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?sortBy=title&order=ASC","timestamp":"2025-03-05T22:44:50.989Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?genre=Classic","timestamp":"2025-03-05T22:44:50.994Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?title=great","timestamp":"2025-03-05T22:44:50.998Z"}
+{"level":"info","message":"Created book: 1984","timestamp":"2025-03-05T22:47:27.819Z"}
+{"level":"info","message":"Fetched book: ID 1","timestamp":"2025-03-05T22:47:27.834Z"}
+{"level":"info","message":"Updated book: ID 1","timestamp":"2025-03-05T22:47:27.844Z"}
+{"level":"info","message":"Soft deleted book: ID 1","timestamp":"2025-03-05T22:47:27.852Z"}
+{"level":"warn","message":"Book not found: ID 1","timestamp":"2025-03-05T22:47:27.859Z"}
+{"level":"info","message":"Restored book: ID 1","timestamp":"2025-03-05T22:47:27.868Z"}
+{"level":"info","message":"Created book: 1984","timestamp":"2025-03-05T22:52:29.030Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.038Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T22:52:29.044Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T22:52:29.051Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T22:52:29.055Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T22:52:29.061Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1/restore","timestamp":"2025-03-05T22:52:29.067Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.072Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.078Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.081Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.085Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.089Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.093Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.096Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.100Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.104Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.108Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.112Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.115Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.119Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.122Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.126Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.130Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.133Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.137Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.141Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.144Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.148Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.151Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.155Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.159Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.162Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.166Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.169Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.173Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.177Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.180Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.184Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.188Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.192Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.195Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.199Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.202Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.205Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.209Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.212Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.216Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.220Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.224Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.228Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.231Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.235Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.238Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.241Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.244Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.247Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.251Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.254Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.257Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.260Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.263Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.267Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.270Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.274Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.278Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.281Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.284Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.287Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.291Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.294Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.297Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.300Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.303Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.306Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.310Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.313Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.315Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.319Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.322Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.325Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.328Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.331Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.334Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.338Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.341Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.344Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.347Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.350Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.353Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.356Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.359Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.362Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.366Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.369Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.372Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.375Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.378Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.381Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.384Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.388Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.391Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.394Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.398Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.401Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.404Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.407Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.411Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.414Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.417Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.420Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.423Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.427Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:29.430Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?sortBy=title&order=ASC","timestamp":"2025-03-05T22:52:29.434Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?genre=Classic","timestamp":"2025-03-05T22:52:29.439Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?title=great","timestamp":"2025-03-05T22:52:29.443Z"}
+{"level":"info","message":"Created book: 1984","timestamp":"2025-03-05T22:52:56.888Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:56.895Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T22:52:56.901Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T22:52:56.907Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T22:52:56.911Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T22:52:56.916Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1/restore","timestamp":"2025-03-05T22:52:56.921Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:56.926Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:56.929Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:56.934Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:56.938Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:56.941Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:56.945Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:56.949Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:56.952Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:56.956Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:56.960Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:56.963Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:56.967Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:56.970Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:56.973Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:56.977Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:56.980Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:56.983Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:56.987Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:56.990Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:56.993Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:56.997Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.000Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.003Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.007Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.010Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.013Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.016Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.019Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.022Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.025Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.029Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.032Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.035Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.038Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.041Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.045Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.048Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.051Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.055Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.058Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.061Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.065Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.068Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.071Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.075Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.078Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.080Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.084Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.087Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.090Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.093Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.096Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.099Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.102Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.105Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.108Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.113Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.116Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.119Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.122Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.125Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.128Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.132Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.135Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.138Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.141Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.144Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.147Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.150Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.154Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.156Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.160Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.163Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.166Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.169Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.172Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.175Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.178Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.181Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.184Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.187Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.190Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.193Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.197Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.200Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.203Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.206Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.209Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.212Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.215Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.218Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.221Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.224Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.227Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.231Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.234Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.238Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.241Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.244Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.247Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.250Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.253Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.256Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.259Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.262Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:52:57.266Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?sortBy=title&order=ASC","timestamp":"2025-03-05T22:52:57.270Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?genre=Classic","timestamp":"2025-03-05T22:52:57.274Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?title=great","timestamp":"2025-03-05T22:52:57.279Z"}
+{"level":"info","message":"Created book: 1984","timestamp":"2025-03-05T22:53:09.392Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.401Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T22:53:09.408Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T22:53:09.417Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T22:53:09.422Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T22:53:09.428Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1/restore","timestamp":"2025-03-05T22:53:09.433Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.438Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.442Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.445Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.449Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.453Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.456Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.460Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.464Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.468Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.471Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.475Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.478Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.482Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.485Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.488Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.492Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.495Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.498Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.501Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.505Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.508Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.511Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.515Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.518Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.521Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.525Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.528Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.531Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.535Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.538Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.542Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.545Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.548Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.552Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.555Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.559Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.562Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.565Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.569Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.572Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.575Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.578Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.582Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.585Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.588Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.592Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.595Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.598Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.601Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.604Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.607Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.610Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.613Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.617Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.620Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.623Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.626Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.630Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.633Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.636Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.639Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.643Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.646Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.650Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.653Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.656Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.659Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.662Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.665Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.669Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.672Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.675Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.678Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.681Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.684Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.687Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.690Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.694Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.697Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.700Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.703Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.706Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.709Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.712Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.716Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.719Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.722Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.725Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.728Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.731Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.734Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.737Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.740Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.743Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.746Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.749Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.753Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.756Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.759Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.762Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.765Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.768Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.772Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.775Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.778Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:53:09.782Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?sortBy=title&order=ASC","timestamp":"2025-03-05T22:53:09.786Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?genre=Classic","timestamp":"2025-03-05T22:53:09.790Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?title=great","timestamp":"2025-03-05T22:53:09.795Z"}
+{"level":"info","message":"Created book: 1984","timestamp":"2025-03-05T22:54:36.881Z"}
+{"level":"info","message":"Fetched book: ID 1","timestamp":"2025-03-05T22:54:36.900Z"}
+{"level":"info","message":"Updated book: ID 1","timestamp":"2025-03-05T22:54:36.915Z"}
+{"level":"info","message":"Soft deleted book: ID 1","timestamp":"2025-03-05T22:54:36.924Z"}
+{"level":"warn","message":"Book not found: ID 1","timestamp":"2025-03-05T22:54:36.930Z"}
+{"level":"info","message":"Restored book: ID 1","timestamp":"2025-03-05T22:54:36.937Z"}
+{"level":"info","message":"Created book: 1984","timestamp":"2025-03-05T22:59:01.701Z"}
+{"level":"info","message":"Fetched book: ID 1","timestamp":"2025-03-05T22:59:01.717Z"}
+{"level":"warn","message":"🚨 Test Mode: Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T22:59:01.723Z"}
+{"level":"warn","message":"🚨 Test Mode: Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T22:59:01.728Z"}
+{"level":"warn","message":"🚨 Test Mode: Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T22:59:01.733Z"}
+{"level":"warn","message":"🚨 Test Mode: Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1/restore","timestamp":"2025-03-05T22:59:01.739Z"}
+{"level":"warn","message":"🚨 Test Mode: Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:59:01.744Z"}
+{"level":"warn","message":"🚨 Test Mode: Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:59:01.748Z"}
+{"level":"warn","message":"🚨 Test Mode: Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:59:01.751Z"}
+{"level":"warn","message":"🚨 Test Mode: Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:59:01.754Z"}
+{"level":"warn","message":"🚨 Test Mode: Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:59:01.758Z"}
+{"level":"warn","message":"🚨 Test Mode: Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:59:01.761Z"}
+{"level":"warn","message":"🚨 Test Mode: Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:59:01.764Z"}
+{"level":"warn","message":"🚨 Test Mode: Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?sortBy=title&order=ASC","timestamp":"2025-03-05T22:59:01.770Z"}
+{"level":"warn","message":"🚨 Test Mode: Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?genre=Classic","timestamp":"2025-03-05T22:59:01.774Z"}
+{"level":"warn","message":"🚨 Test Mode: Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?title=great","timestamp":"2025-03-05T22:59:01.779Z"}
+{"level":"info","message":"Created book: 1984","timestamp":"2025-03-05T22:59:23.529Z"}
+{"level":"info","message":"Fetched book: ID 1","timestamp":"2025-03-05T22:59:23.546Z"}
+{"level":"warn","message":"🚨 Test Mode: Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T22:59:23.551Z"}
+{"level":"warn","message":"🚨 Test Mode: Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T22:59:23.556Z"}
+{"level":"warn","message":"🚨 Test Mode: Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T22:59:23.562Z"}
+{"level":"warn","message":"🚨 Test Mode: Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1/restore","timestamp":"2025-03-05T22:59:23.566Z"}
+{"level":"warn","message":"🚨 Test Mode: Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:59:23.572Z"}
+{"level":"warn","message":"🚨 Test Mode: Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:59:23.576Z"}
+{"level":"warn","message":"🚨 Test Mode: Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:59:23.580Z"}
+{"level":"warn","message":"🚨 Test Mode: Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:59:23.584Z"}
+{"level":"warn","message":"🚨 Test Mode: Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:59:23.587Z"}
+{"level":"warn","message":"🚨 Test Mode: Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:59:23.591Z"}
+{"level":"warn","message":"🚨 Test Mode: Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:59:23.594Z"}
+{"level":"warn","message":"🚨 Test Mode: Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?sortBy=title&order=ASC","timestamp":"2025-03-05T22:59:23.599Z"}
+{"level":"warn","message":"🚨 Test Mode: Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?genre=Classic","timestamp":"2025-03-05T22:59:23.604Z"}
+{"level":"warn","message":"🚨 Test Mode: Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?title=great","timestamp":"2025-03-05T22:59:23.609Z"}
+{"level":"info","message":"Created book: 1984","timestamp":"2025-03-05T22:59:56.441Z"}
+{"level":"info","message":"Fetched book: ID 1","timestamp":"2025-03-05T22:59:56.457Z"}
+{"level":"warn","message":"🚨 Test Mode: Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T22:59:56.462Z"}
+{"level":"warn","message":"🚨 Test Mode: Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T22:59:56.467Z"}
+{"level":"warn","message":"🚨 Test Mode: Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T22:59:56.472Z"}
+{"level":"warn","message":"🚨 Test Mode: Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1/restore","timestamp":"2025-03-05T22:59:56.477Z"}
+{"level":"warn","message":"🚨 Test Mode: Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:59:56.482Z"}
+{"level":"warn","message":"🚨 Test Mode: Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:59:56.486Z"}
+{"level":"warn","message":"🚨 Test Mode: Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:59:56.490Z"}
+{"level":"warn","message":"🚨 Test Mode: Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:59:56.494Z"}
+{"level":"warn","message":"🚨 Test Mode: Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:59:56.498Z"}
+{"level":"warn","message":"🚨 Test Mode: Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:59:56.501Z"}
+{"level":"warn","message":"🚨 Test Mode: Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T22:59:56.505Z"}
+{"level":"warn","message":"🚨 Test Mode: Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?sortBy=title&order=ASC","timestamp":"2025-03-05T22:59:56.509Z"}
+{"level":"warn","message":"🚨 Test Mode: Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?genre=Classic","timestamp":"2025-03-05T22:59:56.514Z"}
+{"level":"warn","message":"🚨 Test Mode: Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?title=great","timestamp":"2025-03-05T22:59:56.519Z"}
+{"level":"info","message":"Created book: 1984","timestamp":"2025-03-05T23:01:21.312Z"}
+{"level":"info","message":"Fetched book: ID 1","timestamp":"2025-03-05T23:01:21.327Z"}
+{"level":"info","message":"Updated book: ID 1","timestamp":"2025-03-05T23:01:21.338Z"}
+{"level":"info","message":"Soft deleted book: ID 1","timestamp":"2025-03-05T23:01:21.346Z"}
+{"level":"warn","message":"Book not found: ID 1","timestamp":"2025-03-05T23:01:21.353Z"}
+{"level":"info","message":"Restored book: ID 1","timestamp":"2025-03-05T23:01:21.361Z"}
+{"level":"info","message":"Created book: 1984","timestamp":"2025-03-05T23:03:57.900Z"}
+{"level":"info","message":"Fetched book: ID 1","timestamp":"2025-03-05T23:03:57.916Z"}
+{"level":"info","message":"Updated book: ID 1","timestamp":"2025-03-05T23:03:57.925Z"}
+{"level":"info","message":"Soft deleted book: ID 1","timestamp":"2025-03-05T23:03:57.933Z"}
+{"level":"warn","message":"Book not found: ID 1","timestamp":"2025-03-05T23:03:57.939Z"}
+{"level":"info","message":"Restored book: ID 1","timestamp":"2025-03-05T23:03:57.947Z"}
+{"level":"info","message":"Created book: 1984","timestamp":"2025-03-05T23:07:40.983Z"}
+{"level":"info","message":"Fetched book: ID 1","timestamp":"2025-03-05T23:07:40.998Z"}
+{"level":"info","message":"Updated book: ID 1","timestamp":"2025-03-05T23:07:41.008Z"}
+{"level":"info","message":"Soft deleted book: ID 1","timestamp":"2025-03-05T23:07:41.016Z"}
+{"level":"warn","message":"Book not found: ID 1","timestamp":"2025-03-05T23:07:41.022Z"}
+{"level":"info","message":"Restored book: ID 1","timestamp":"2025-03-05T23:07:41.031Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:07:41.369Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:07:41.372Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:07:41.376Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:07:41.380Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:07:41.383Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:07:41.386Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:07:41.390Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:07:41.394Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:07:41.397Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:07:41.400Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:07:41.403Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:07:41.406Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:07:41.410Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:07:41.413Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:07:41.416Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:07:41.419Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:07:41.422Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:07:41.425Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:07:41.428Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:07:41.434Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:07:41.437Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?title=great","timestamp":"2025-03-05T23:07:41.441Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?genre=Classic","timestamp":"2025-03-05T23:07:41.446Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?title=great","timestamp":"2025-03-05T23:07:41.451Z"}
+{"level":"info","message":"Created book: 1984","timestamp":"2025-03-05T23:10:19.557Z"}
+{"level":"info","message":"Fetched book: ID 1","timestamp":"2025-03-05T23:10:19.573Z"}
+{"level":"info","message":"Updated book: ID 1","timestamp":"2025-03-05T23:10:19.583Z"}
+{"level":"info","message":"Soft deleted book: ID 1","timestamp":"2025-03-05T23:10:19.590Z"}
+{"level":"warn","message":"Book not found: ID 1","timestamp":"2025-03-05T23:10:19.597Z"}
+{"level":"info","message":"Restored book: ID 1","timestamp":"2025-03-05T23:10:19.606Z"}
+{"level":"info","message":"Created book: The Great Gatsby","timestamp":"2025-03-05T23:10:20.724Z"}
+{"level":"info","message":"Created book: Great Expectations","timestamp":"2025-03-05T23:10:20.730Z"}
+{"level":"info","message":"Created book: 1984","timestamp":"2025-03-05T23:12:06.354Z"}
+{"level":"info","message":"Fetched book: ID 1","timestamp":"2025-03-05T23:12:06.371Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T23:12:06.377Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T23:12:06.383Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T23:12:06.389Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1/restore","timestamp":"2025-03-05T23:12:06.395Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:12:06.402Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:12:06.406Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:12:06.410Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:12:06.414Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:12:06.418Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:12:06.421Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:12:06.425Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:12:06.429Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:12:06.433Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:12:06.437Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:12:06.442Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:12:06.449Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:12:06.452Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?title=great","timestamp":"2025-03-05T23:12:06.457Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?genre=Classic","timestamp":"2025-03-05T23:12:06.462Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?title=great","timestamp":"2025-03-05T23:12:06.467Z"}
+{"level":"info","message":"Created book: 1984","timestamp":"2025-03-05T23:13:30.495Z"}
+{"level":"info","message":"Fetched book: ID 1","timestamp":"2025-03-05T23:13:30.510Z"}
+{"level":"info","message":"Updated book: ID 1","timestamp":"2025-03-05T23:13:30.520Z"}
+{"level":"info","message":"Soft deleted book: ID 1","timestamp":"2025-03-05T23:13:30.527Z"}
+{"level":"warn","message":"Book not found: ID 1","timestamp":"2025-03-05T23:13:30.533Z"}
+{"level":"info","message":"Restored book: ID 1","timestamp":"2025-03-05T23:13:30.542Z"}
+{"level":"info","message":"Created book: The Great Gatsby","timestamp":"2025-03-05T23:13:30.601Z"}
+{"level":"info","message":"Created book: Great Expectations","timestamp":"2025-03-05T23:13:30.606Z"}
+{"level":"info","message":"Created book: 1984","timestamp":"2025-03-05T23:16:32.457Z"}
+{"level":"info","message":"Fetched book: ID 1","timestamp":"2025-03-05T23:16:32.472Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T23:16:32.478Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T23:16:32.483Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T23:16:32.488Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1/restore","timestamp":"2025-03-05T23:16:32.493Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:16:32.499Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:16:32.503Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:16:32.507Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:16:32.510Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:16:32.514Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:16:32.517Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:16:33.024Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:16:33.044Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:16:33.054Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?title=great","timestamp":"2025-03-05T23:16:33.061Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?genre=Classic","timestamp":"2025-03-05T23:16:33.071Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?title=great","timestamp":"2025-03-05T23:16:33.079Z"}
+{"level":"info","message":"Created book: 1984","timestamp":"2025-03-05T23:20:26.002Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:20:26.008Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T23:20:26.014Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T23:20:26.020Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T23:20:26.025Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T23:20:26.030Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1/restore","timestamp":"2025-03-05T23:20:26.035Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:20:26.040Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:20:26.147Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:20:26.260Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:20:26.376Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:20:26.490Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:20:26.605Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:20:26.720Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:20:26.738Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:20:26.748Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?title=great","timestamp":"2025-03-05T23:20:26.756Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?genre=Classic","timestamp":"2025-03-05T23:20:26.766Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?title=great","timestamp":"2025-03-05T23:20:26.774Z"}
+{"level":"info","message":"Created book: 1984","timestamp":"2025-03-05T23:21:37.394Z"}
+{"level":"info","message":"Fetched book: ID 1","timestamp":"2025-03-05T23:21:37.410Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T23:21:37.417Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T23:21:37.421Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T23:21:37.426Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1/restore","timestamp":"2025-03-05T23:21:37.431Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:21:37.437Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:21:37.440Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:21:37.445Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:21:37.449Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:21:37.453Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:21:37.456Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:21:37.459Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:21:37.463Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:21:37.467Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:21:37.470Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:21:37.474Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:21:37.481Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:21:37.485Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?title=great","timestamp":"2025-03-05T23:21:37.489Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?genre=Classic","timestamp":"2025-03-05T23:21:37.494Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?title=great","timestamp":"2025-03-05T23:21:37.498Z"}
+{"level":"info","message":"Created book: 1984","timestamp":"2025-03-05T23:22:48.790Z"}
+{"level":"info","message":"Fetched book: ID 1","timestamp":"2025-03-05T23:22:48.806Z"}
+{"level":"info","message":"Updated book: ID 1","timestamp":"2025-03-05T23:22:48.817Z"}
+{"level":"info","message":"Soft deleted book: ID 1","timestamp":"2025-03-05T23:22:48.824Z"}
+{"level":"warn","message":"Book not found: ID 1","timestamp":"2025-03-05T23:22:48.830Z"}
+{"level":"info","message":"Restored book: ID 1","timestamp":"2025-03-05T23:22:48.838Z"}
+{"level":"info","message":"Created book: The Great Gatsby","timestamp":"2025-03-05T23:22:48.897Z"}
+{"level":"info","message":"Created book: Great Expectations","timestamp":"2025-03-05T23:22:48.905Z"}
+{"level":"info","message":"Created book: 1984","timestamp":"2025-03-05T23:24:30.125Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:24:30.131Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T23:24:30.138Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T23:24:30.144Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T23:24:30.148Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T23:24:30.153Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1/restore","timestamp":"2025-03-05T23:24:30.159Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:24:30.164Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:24:30.169Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:24:30.172Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:24:30.176Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:24:30.179Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:24:30.183Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:24:30.189Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:24:30.193Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?title=great","timestamp":"2025-03-05T23:24:30.197Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?genre=Classic","timestamp":"2025-03-05T23:24:30.202Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?title=great","timestamp":"2025-03-05T23:24:30.207Z"}
+{"level":"info","message":"Created book: 1984","timestamp":"2025-03-05T23:24:59.708Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:24:59.717Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T23:24:59.723Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T23:24:59.729Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T23:24:59.734Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T23:24:59.739Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1/restore","timestamp":"2025-03-05T23:24:59.745Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:24:59.751Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:24:59.755Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:24:59.760Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:24:59.764Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:24:59.768Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:24:59.772Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:24:59.776Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:24:59.779Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:24:59.783Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:24:59.788Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:24:59.791Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:24:59.798Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:24:59.802Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?title=great","timestamp":"2025-03-05T23:24:59.806Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?genre=Classic","timestamp":"2025-03-05T23:24:59.812Z"}
+{"level":"warn","message":"Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?title=great","timestamp":"2025-03-05T23:24:59.816Z"}
+{"level":"info","message":"Created book: 1984","timestamp":"2025-03-05T23:25:19.396Z"}
+{"level":"info","message":"Fetched book: ID 1","timestamp":"2025-03-05T23:25:19.412Z"}
+{"level":"info","message":"Updated book: ID 1","timestamp":"2025-03-05T23:25:19.422Z"}
+{"level":"info","message":"Soft deleted book: ID 1","timestamp":"2025-03-05T23:25:19.429Z"}
+{"level":"warn","message":"Book not found: ID 1","timestamp":"2025-03-05T23:25:19.435Z"}
+{"level":"info","message":"Restored book: ID 1","timestamp":"2025-03-05T23:25:19.444Z"}
+{"level":"info","message":"Created book: The Great Gatsby","timestamp":"2025-03-05T23:25:19.502Z"}
+{"level":"info","message":"Created book: Great Expectations","timestamp":"2025-03-05T23:25:19.507Z"}
+{"level":"info","message":"Created book: 1984","timestamp":"2025-03-05T23:26:55.243Z"}
+{"level":"info","message":"Fetched book: ID 1","timestamp":"2025-03-05T23:26:55.259Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T23:26:55.265Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T23:26:55.270Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T23:26:55.275Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1/restore","timestamp":"2025-03-05T23:26:55.280Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:26:55.287Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:26:55.292Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:26:55.296Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:26:55.299Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:26:55.304Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:26:55.307Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:26:55.313Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:26:55.317Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?title=great","timestamp":"2025-03-05T23:26:55.321Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?genre=Classic","timestamp":"2025-03-05T23:26:55.326Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?title=great","timestamp":"2025-03-05T23:26:55.332Z"}
+{"level":"info","message":"Created book: 1984","timestamp":"2025-03-05T23:27:48.563Z"}
+{"level":"info","message":"Fetched book: ID 1","timestamp":"2025-03-05T23:27:48.581Z"}
+{"level":"info","message":"Updated book: ID 1","timestamp":"2025-03-05T23:27:48.591Z"}
+{"level":"info","message":"Soft deleted book: ID 1","timestamp":"2025-03-05T23:27:48.602Z"}
+{"level":"warn","message":"Book not found: ID 1","timestamp":"2025-03-05T23:27:48.608Z"}
+{"level":"info","message":"Restored book: ID 1","timestamp":"2025-03-05T23:27:48.617Z"}
+{"level":"info","message":"Created book: The Great Gatsby","timestamp":"2025-03-05T23:27:48.683Z"}
+{"level":"info","message":"Created book: Great Expectations","timestamp":"2025-03-05T23:27:48.689Z"}
+{"level":"info","message":"Created book: 1984","timestamp":"2025-03-05T23:29:21.047Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:29:21.054Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T23:29:21.060Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T23:29:21.066Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T23:29:21.070Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T23:29:21.075Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1/restore","timestamp":"2025-03-05T23:29:21.081Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:29:21.086Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:29:21.093Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:29:21.097Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?title=great","timestamp":"2025-03-05T23:29:21.101Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?genre=Classic","timestamp":"2025-03-05T23:29:21.106Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?title=great","timestamp":"2025-03-05T23:29:21.111Z"}
+{"level":"info","message":"Created book: 1984","timestamp":"2025-03-05T23:31:00.804Z"}
+{"level":"info","message":"Fetched book: ID 1","timestamp":"2025-03-05T23:31:00.819Z"}
+{"level":"info","message":"Updated book: ID 1","timestamp":"2025-03-05T23:31:00.829Z"}
+{"level":"info","message":"Soft deleted book: ID 1","timestamp":"2025-03-05T23:31:00.837Z"}
+{"level":"warn","message":"Book not found: ID 1","timestamp":"2025-03-05T23:31:00.844Z"}
+{"level":"info","message":"Restored book: ID 1","timestamp":"2025-03-05T23:31:00.852Z"}
+{"level":"info","message":"Created book: The Great Gatsby","timestamp":"2025-03-05T23:31:00.892Z"}
+{"level":"info","message":"Created book: Great Expectations","timestamp":"2025-03-05T23:31:00.897Z"}
+{"level":"info","message":"Created book: 1984","timestamp":"2025-03-05T23:34:13.715Z"}
+{"level":"info","message":"Fetched book: ID 1","timestamp":"2025-03-05T23:34:13.730Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T23:34:13.736Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T23:34:13.741Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1","timestamp":"2025-03-05T23:34:13.746Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books/1/restore","timestamp":"2025-03-05T23:34:13.752Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:34:13.759Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:34:13.765Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books","timestamp":"2025-03-05T23:34:13.769Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?title=great","timestamp":"2025-03-05T23:34:13.773Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?genre=Classic","timestamp":"2025-03-05T23:34:13.778Z"}
+{"level":"warn","message":"🚨 Rate limit exceeded: ::ffff:127.0.0.1 tried to access /api/books?title=great","timestamp":"2025-03-05T23:34:13.782Z"}
+{"level":"info","message":"Created book: 1984","timestamp":"2025-03-05T23:37:30.509Z"}
+{"level":"info","message":"Fetched book: ID 1","timestamp":"2025-03-05T23:37:30.524Z"}
+{"level":"info","message":"Updated book: ID 1","timestamp":"2025-03-05T23:37:30.535Z"}
+{"level":"info","message":"Soft deleted book: ID 1","timestamp":"2025-03-05T23:37:30.542Z"}
+{"level":"warn","message":"Book not found: ID 1","timestamp":"2025-03-05T23:37:30.549Z"}
+{"level":"info","message":"Restored book: ID 1","timestamp":"2025-03-05T23:37:30.557Z"}
+{"level":"info","message":"Created book: The Great Gatsby","timestamp":"2025-03-05T23:37:30.597Z"}
+{"level":"info","message":"Created book: Great Expectations","timestamp":"2025-03-05T23:37:30.602Z"}
