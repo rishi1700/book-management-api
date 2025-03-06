@@ -1,20 +1,32 @@
 const rateLimit = require("express-rate-limit");
-const logger = require("../utils/logger");
+const redisClient = require("./redisClient"); // ✅ Import Redis client
 
-const isTestEnv = process.env.NODE_ENV === "test";
+// ✅ Custom Redis Store for express-rate-limit
+const redisStore = {
+    async increment(key) {
+        const value = await redisClient.incr(key);
+        if (value === 1) {
+            await redisClient.expire(key, 900); // 15 minutes
+        }
+        return { totalHits: value, resetTime: new Date(Date.now() + 900 * 1000) };
+    },
+    async decrement(key) {
+        await redisClient.decr(key);
+    },
+    async resetKey(key) {
+        await redisClient.del(key);
+    }
+};
 
-const limiter = rateLimit({
-    windowMs: isTestEnv ? 1000 : 60 * 1000, // 1 second for tests, 1 minute for production
-    max: isTestEnv ? 1000 : 5, // Allow 1000 requests per second in tests, 5 in production
+// ✅ Ensure redisRateLimiter is a middleware function
+const redisRateLimiter = rateLimit({
+    store: redisStore,
+    windowMs: 15 * 60 * 1000, // 15 minutes
+    max: 100, // Limit each IP to 100 requests per window
     message: { error: "Too many requests from this IP, please try again later." },
-    headers: true,
     standardHeaders: true,
     legacyHeaders: false,
-    keyGenerator: (req) => req.ip || "test-ip",
-    handler: (req, res) => {
-        logger.warn(`🚨 Rate limit exceeded: ${req.ip} tried to access ${req.originalUrl}`);
-        res.status(429).json({ error: "Too many requests from this IP, please try again later." });
-    },
 });
 
-module.exports = limiter;
+// ✅ Export a valid middleware function
+module.exports = (req, res, next) => redisRateLimiter(req, res, next);
