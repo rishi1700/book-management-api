@@ -25,7 +25,7 @@ The **Book Management API** is a RESTful web service for managing a catalog of b
 ## 🛠️ Tech Stack
 
 - **Backend**: Node.js, Express.js
-- **Database**: MySQL/PostgreSQL (Sequelize ORM)
+- **Database**: MySQL (Sequelize ORM)
 - **Authentication**: JWT (JSON Web Tokens)
 - **Logging**: Winston Logger
 - **API Documentation**: Swagger
@@ -62,7 +62,7 @@ The **Book Management API** is a RESTful web service for managing a catalog of b
 ### 🛠 Prerequisites
 
 - **Node.js** (v18+)
-- **MySQL/PostgreSQL** database
+- **MySQL** database
 - **Docker** (optional for containerized deployment)
 
 ### 📦 Install Dependencies
@@ -89,7 +89,7 @@ JWT_SECRET=your_secret_key
 ### 🚀 Run API in Development Mode
 
 ```bash
-npm start
+node src/app.js
 ```
 
 ### 🐳 Run with Docker
@@ -122,8 +122,9 @@ npm install
 ```bash
 cp .env.example .env
 ```
+- If running locally, set `DB_HOST=127.0.0.1`
+- If running with Docker, set `DB_HOST=mysql`
 
-(Or manually create `.env` and paste variables from README.)
 
 4️⃣ **Run database migrations & seeders (if required):**
 
@@ -141,7 +142,7 @@ npm start
 Or, if using Docker:
 
 ```bash
-docker-compose up --build
+docker-compose up --build or docker compose up --build (for macos)
 ```
 
 6️⃣ **Access the API in Swagger UI:**
