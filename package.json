@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "start": "node src/app.js",
     "test": "NODE_ENV=test jest --detectOpenHandles --forceExit"
   },
   "keywords": [],
@@ -20,20 +21,25 @@
     "express-rate-limit": "^7.5.0",
     "joi": "^17.13.3",
     "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
     "mysql2": "^3.13.0",
     "rate-limit-redis": "^4.2.0",
     "redis": "^4.7.0",
     "sequelize": "^6.37.6",
     "serverless-http": "^3.2.0",
-    "winston": "^3.17.0"
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "winston": "^3.17.0",
+    "xss": "^1.0.15"
   },
   "devDependencies": {
     "jest": "^29.7.0",
+    "sequelize-cli": "^6.6.2",
     "supertest": "^7.0.0"
   },
-  
-    "jest": {
-      "setupFilesAfterEnv": ["./jest.setup.js"]
-    }
-  
+  "jest": {
+    "setupFilesAfterEnv": [
+      "./jest.setup.js"
+    ]
+  }
 }

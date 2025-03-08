@@ -1,0 +1,19 @@
+{
+    "development": {
+      "username": "rishi",
+      "password": "P@ssw0rd",
+      "database": "book_management",
+      "host": "mysql",
+      "port": 3306,
+      "dialect": "mysql"
+    },
+    "production": {
+      "username": "rishi",
+      "password": "P@ssw0rd",
+      "database": "book_management",
+      "host": "mysql",
+      "port": 3306,
+      "dialect": "mysql"
+    }
+  }
+  
