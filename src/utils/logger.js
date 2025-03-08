@@ -12,7 +12,6 @@ const logger = createLogger({
   level: process.env.LOG_LEVEL || "info",
   format: format.combine(
     format.timestamp(),
-    // You can add additional formatting here, for example including request IDs if attached to log messages
     format.json()
   ),
   transports: [
@@ -27,13 +26,11 @@ const logger = createLogger({
   ],
 });
 
-// Add a console transport for non-production environments
-if (process.env.NODE_ENV !== "production") {
-  logger.add(
-    new transports.Console({
-      format: format.combine(format.colorize(), format.simple()),
-    })
-  );
-}
+// ✅ Always show logs in console (even in production)
+logger.add(
+  new transports.Console({
+    format: format.combine(format.colorize(), format.simple()),
+  })
+);
 
 module.exports = logger;
