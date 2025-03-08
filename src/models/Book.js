@@ -12,13 +12,14 @@ const Book = sequelize.define(
     title: {
       type: DataTypes.STRING,
       allowNull: false,
+      unique: true, // 🔹 Ensure uniqueness
     },
     author: {
       type: DataTypes.STRING,
       allowNull: false,
     },
     published_date: {
-      type: DataTypes.DATE,
+      type: DataTypes.DATEONLY, // ✅ Use DATEONLY to store only the date part
       allowNull: false,
     },
     genre: {
@@ -33,7 +34,7 @@ const Book = sequelize.define(
   {
     timestamps: true,
     paranoid: true, // Enables soft delete
-  },
+  }
 );
 
 module.exports = Book;

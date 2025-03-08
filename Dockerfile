@@ -1,20 +1,22 @@
-# Use an official Node.js runtime as a parent image
+# Use Node.js LTS version as the base image
 FROM node:18
 
-# Set the working directory inside the container
-WORKDIR /usr/src/app
+# Set the working directory in the container
+WORKDIR /app
 
-# Copy package.json and package-lock.json first for caching dependencies
+# Copy package.json and package-lock.json
 COPY package*.json ./
 
 # Install dependencies
 RUN npm install
 
-# Copy the rest of the application files
+# Copy the rest of the application
 COPY . .
 
-# Expose the API port
+# Expose the application port
 EXPOSE 5000
 
-# Start the application
-CMD ["npm", "start"]
+# Command to run the app
+CMD ["sh", "-c", "npx sequelize-cli db:migrate --env production && npx sequelize-cli db:seed:all --env production && npm start"]
+
+

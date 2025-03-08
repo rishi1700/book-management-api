@@ -1,19 +1,26 @@
 const express = require("express");
-const cors = require("cors");
 const allowedOrigins = ["http://localhost:3000"];
 const sequelize = require("./config/db");
-const bodyParser = require("body-parser");
 const rateLimiter = require("./middlewares/rateLimitMiddleware");
 const bookRoutes = require("./routes/bookRoutes");
 const authRoutes = require("./routes/authRoutes");
 const errorMiddleware = require("./middlewares/errorMiddleware");
+const morgan = require("morgan");
+const logger = require("./utils/logger"); // ✅ Import Winston logger
+const swaggerDocs = require("./config/swagger"); // ✅ Import Swagger
 
 require("dotenv").config();
 
 const app = express();
+
+// ✅ Morgan logging integrated with Winston
+app.use(morgan("combined", { stream: { write: (message) => logger.info(message.trim()) } }));
+
 app.use(express.json());
-app.use(bodyParser.json());
 app.use(rateLimiter); // ✅ Apply rate limiting middleware
+
+// ✅ Load Swagger Docs
+swaggerDocs(app);
 
 // ✅ FIX: Properly handle CORS errors without throwing a 500
 app.use((req, res, next) => {
@@ -25,9 +32,15 @@ app.use((req, res, next) => {
         res.header("Access-Control-Allow-Headers", "Content-Type, Authorization");
         return next();
     } else {
-        console.error("🚨 CORS Blocked: Unauthorized origin", origin);
+        logger.warn("CORS Blocked: Unauthorized origin", { origin });
         return res.status(403).json({ error: "CORS not allowed" });
     }
+});
+
+// ✅ Log API route usage
+app.use((req, res, next) => {
+    logger.info("Incoming request", { method: req.method, url: req.url, ip: req.ip });
+    next();
 });
 
 // Routes
@@ -40,17 +53,17 @@ sequelize
   .sync({ alter: true })
   .then(() => {
     if (!isTestEnv) {
-      console.log("✅ Database synced");
+      logger.info("✅ Database synced successfully");
     }
   })
-  .catch((err) => console.error("🚨 Database sync error:", err));
+  .catch((err) => logger.error("🚨 Database sync error", { error: err.message }));
 
 // Global Error Handler
 app.use(errorMiddleware);
 
 if (!isTestEnv) {
   const PORT = process.env.PORT || 5000;
-  app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
+  app.listen(PORT, () => logger.info(`🚀 Server running on port ${PORT}`));
 }
 
 module.exports = app;
