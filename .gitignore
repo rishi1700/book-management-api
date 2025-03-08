@@ -1,0 +1,29 @@
+# 🚀 Node.js dependencies
+node_modules/
+package-lock.json
+
+# 🔒 Environment Variables
+.env
+
+# 🛠 Logs & Debugging Files
+logs/
+*.log
+
+# 🐳 Docker Build Files
+dump.rdb
+*.rdb
+
+# 🔄 Database Migrations & Seeds (Optional: Keep if needed)
+migrations/
+seeders/
+
+# 🛠 Jest Test Files & Coverage Reports
+jest.setup.js
+jest.global-teardown.js
+coverage/
+
+# 🔍 System & Editor Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

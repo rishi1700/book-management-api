@@ -1,10 +1,9 @@
 const request = require("supertest");
 const app = require("../src/app");
 
-let token; // Store JWT token
+let token;
 
 beforeAll(async () => {
-    // Register & login a test user
     await request(app).post("/api/auth/register").send({
         username: "testuser",
         password: "password123",
@@ -15,7 +14,7 @@ beforeAll(async () => {
         password: "password123",
     });
 
-    token = res.body.token; // Store the token
+    token = res.body.token;
 });
 
 describe("🛡️ Security Tests (XSS Protection & CORS Enforcement)", () => {
@@ -23,7 +22,7 @@ describe("🛡️ Security Tests (XSS Protection & CORS Enforcement)", () => {
         const maliciousInput = `<script>alert('XSS');</script>`;
         const res = await request(app)
             .post("/api/books")
-            .set("Authorization", `Bearer ${token}`) // ✅ Use valid token
+            .set("Authorization", `Bearer ${token}`)
             .send({
                 title: maliciousInput,
                 author: "Hacker",
@@ -31,20 +30,24 @@ describe("🛡️ Security Tests (XSS Protection & CORS Enforcement)", () => {
                 genre: "Malware",
             });
 
-        console.log("🔍 XSS Test Response:", res.statusCode, res.body);
-
-        expect(res.statusCode).toBe(400); // Expecting rejection due to input validation
-        expect(res.body).toHaveProperty("error"); // Ensure error message exists
+        expect(res.statusCode).toBe(400);
+        expect(res.body).toHaveProperty("error");
     });
+
     test("✅ CORS Enforcement - Should allow requests from allowed origins", async () => {
         const res = await request(app)
-            .options("/api/books") // Use OPTIONS request to test CORS preflight
-            .set("Origin", "http://localhost:3000"); // ✅ Allowed origin
-    
-        console.log("✅ CORS Allowed Response:", res.statusCode, res.headers);
-    
+            .options("/api/books")
+            .set("Origin", "http://localhost:3000");
+
         expect(res.headers).toHaveProperty("access-control-allow-origin", "http://localhost:3000");
     });
-    
-});
 
+    test("🚨 CORS Enforcement - Should block unauthorized origins", async () => {
+        const res = await request(app)
+            .options("/api/books")
+            .set("Origin", "http://evil-site.com");
+
+        expect(res.statusCode).toBe(403);
+        expect(res.body).toHaveProperty("error", "CORS not allowed");
+    });
+});

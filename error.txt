@@ -1,0 +1,183 @@
+
+> book-management-api@1.0.0 test
+> NODE_ENV=test jest --detectOpenHandles --forceExit tests/bookRoutes.test.js
+
+[31merror[39m: 🚨 Database sync error: Table 'book_management.books' doesn't exist {"timestamp":"2025-03-08T14:11:56.732Z"}
+  console.log
+    ✅ Database synced for testing
+
+      at Object.log (tests/bookRoutes.test.js:12:11)
+
+[31merror[39m: Redis error in increment: The client is closed {"timestamp":"2025-03-08T14:11:56.796Z"}
+[31merror[39m: Error: The client is closed
+    at RedisClient._RedisClient_sendCommand (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/client/index.js:520:31)
+    at RedisClient.commandsExecutor (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/client/index.js:190:154)
+    at RedisClient.BaseClass.<computed> [as incr] (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/commander.js:8:29)
+    at Object.incr [as increment] (/Users/rishi/book-management-api/src/middlewares/rateLimitMiddleware.js:10:39)
+    at /Users/rishi/book-management-api/node_modules/express-rate-limit/dist/index.cjs:728:52
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at /Users/rishi/book-management-api/node_modules/express-rate-limit/dist/index.cjs:704:5 {"timestamp":"2025-03-08T14:11:56.800Z"}
+[31merror[39m: Redis error in increment: The client is closed {"timestamp":"2025-03-08T14:11:56.810Z"}
+[31merror[39m: Error: The client is closed
+    at RedisClient._RedisClient_sendCommand (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/client/index.js:520:31)
+    at RedisClient.commandsExecutor (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/client/index.js:190:154)
+    at RedisClient.BaseClass.<computed> [as incr] (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/commander.js:8:29)
+    at Object.incr [as increment] (/Users/rishi/book-management-api/src/middlewares/rateLimitMiddleware.js:10:39)
+    at /Users/rishi/book-management-api/node_modules/express-rate-limit/dist/index.cjs:728:52
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at /Users/rishi/book-management-api/node_modules/express-rate-limit/dist/index.cjs:704:5 {"timestamp":"2025-03-08T14:11:56.814Z"}
+[31merror[39m: Redis error in increment: The client is closed {"timestamp":"2025-03-08T14:11:56.821Z"}
+[31merror[39m: Error: The client is closed
+    at RedisClient._RedisClient_sendCommand (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/client/index.js:520:31)
+    at RedisClient.commandsExecutor (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/client/index.js:190:154)
+    at RedisClient.BaseClass.<computed> [as incr] (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/commander.js:8:29)
+    at Object.incr [as increment] (/Users/rishi/book-management-api/src/middlewares/rateLimitMiddleware.js:10:39)
+    at /Users/rishi/book-management-api/node_modules/express-rate-limit/dist/index.cjs:728:52
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at /Users/rishi/book-management-api/node_modules/express-rate-limit/dist/index.cjs:704:5 {"timestamp":"2025-03-08T14:11:56.825Z"}
+[31merror[39m: Redis error in increment: The client is closed {"timestamp":"2025-03-08T14:11:56.833Z"}
+[31merror[39m: Error: The client is closed
+    at RedisClient._RedisClient_sendCommand (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/client/index.js:520:31)
+    at RedisClient.commandsExecutor (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/client/index.js:190:154)
+    at RedisClient.BaseClass.<computed> [as incr] (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/commander.js:8:29)
+    at Object.incr [as increment] (/Users/rishi/book-management-api/src/middlewares/rateLimitMiddleware.js:10:39)
+    at /Users/rishi/book-management-api/node_modules/express-rate-limit/dist/index.cjs:728:52
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at /Users/rishi/book-management-api/node_modules/express-rate-limit/dist/index.cjs:704:5 {"timestamp":"2025-03-08T14:11:56.835Z"}
+  console.log
+    🚨 Missing Fields Test Response: 500 { error: 'The client is closed' }
+
+      at Object.log (tests/bookRoutes.test.js:65:13)
+
+[31merror[39m: Redis error in increment: The client is closed {"timestamp":"2025-03-08T14:11:56.844Z"}
+[31merror[39m: Error: The client is closed
+    at RedisClient._RedisClient_sendCommand (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/client/index.js:520:31)
+    at RedisClient.commandsExecutor (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/client/index.js:190:154)
+    at RedisClient.BaseClass.<computed> [as incr] (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/commander.js:8:29)
+    at Object.incr [as increment] (/Users/rishi/book-management-api/src/middlewares/rateLimitMiddleware.js:10:39)
+    at /Users/rishi/book-management-api/node_modules/express-rate-limit/dist/index.cjs:728:52
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at /Users/rishi/book-management-api/node_modules/express-rate-limit/dist/index.cjs:704:5 {"timestamp":"2025-03-08T14:11:56.846Z"}
+  console.log
+    🚨 Invalid Update Test Response: 500 { error: 'The client is closed' }
+
+      at Object.log (tests/bookRoutes.test.js:81:13)
+
+[31merror[39m: Redis error in increment: The client is closed {"timestamp":"2025-03-08T14:11:56.852Z"}
+[31merror[39m: Error: The client is closed
+    at RedisClient._RedisClient_sendCommand (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/client/index.js:520:31)
+    at RedisClient.commandsExecutor (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/client/index.js:190:154)
+    at RedisClient.BaseClass.<computed> [as incr] (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/commander.js:8:29)
+    at Object.incr [as increment] (/Users/rishi/book-management-api/src/middlewares/rateLimitMiddleware.js:10:39)
+    at /Users/rishi/book-management-api/node_modules/express-rate-limit/dist/index.cjs:728:52
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at /Users/rishi/book-management-api/node_modules/express-rate-limit/dist/index.cjs:704:5 {"timestamp":"2025-03-08T14:11:56.854Z"}
+  console.log
+    🚨 Delete Non-existent Book Test Response: 500 { error: 'The client is closed' }
+
+      at Object.log (tests/bookRoutes.test.js:92:13)
+
+[31merror[39m: Redis error in increment: The client is closed {"timestamp":"2025-03-08T14:11:56.861Z"}
+[31merror[39m: Error: The client is closed
+    at RedisClient._RedisClient_sendCommand (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/client/index.js:520:31)
+    at RedisClient.commandsExecutor (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/client/index.js:190:154)
+    at RedisClient.BaseClass.<computed> [as incr] (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/commander.js:8:29)
+    at Object.incr [as increment] (/Users/rishi/book-management-api/src/middlewares/rateLimitMiddleware.js:10:39)
+    at /Users/rishi/book-management-api/node_modules/express-rate-limit/dist/index.cjs:728:52
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at /Users/rishi/book-management-api/node_modules/express-rate-limit/dist/index.cjs:704:5 {"timestamp":"2025-03-08T14:11:56.863Z"}
+[31merror[39m: Redis error in increment: The client is closed {"timestamp":"2025-03-08T14:11:56.868Z"}
+[31merror[39m: Error: The client is closed
+    at RedisClient._RedisClient_sendCommand (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/client/index.js:520:31)
+    at RedisClient.commandsExecutor (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/client/index.js:190:154)
+    at RedisClient.BaseClass.<computed> [as incr] (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/commander.js:8:29)
+    at Object.incr [as increment] (/Users/rishi/book-management-api/src/middlewares/rateLimitMiddleware.js:10:39)
+    at /Users/rishi/book-management-api/node_modules/express-rate-limit/dist/index.cjs:728:52
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at /Users/rishi/book-management-api/node_modules/express-rate-limit/dist/index.cjs:704:5 {"timestamp":"2025-03-08T14:11:56.870Z"}
+[31merror[39m: Redis error in increment: The client is closed {"timestamp":"2025-03-08T14:11:56.876Z"}
+[31merror[39m: Error: The client is closed
+    at RedisClient._RedisClient_sendCommand (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/client/index.js:520:31)
+    at RedisClient.commandsExecutor (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/client/index.js:190:154)
+    at RedisClient.BaseClass.<computed> [as incr] (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/commander.js:8:29)
+    at Object.incr [as increment] (/Users/rishi/book-management-api/src/middlewares/rateLimitMiddleware.js:10:39)
+    at /Users/rishi/book-management-api/node_modules/express-rate-limit/dist/index.cjs:728:52
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at /Users/rishi/book-management-api/node_modules/express-rate-limit/dist/index.cjs:704:5 {"timestamp":"2025-03-08T14:11:56.878Z"}
+[31merror[39m: Redis error in increment: The client is closed {"timestamp":"2025-03-08T14:11:56.885Z"}
+[31merror[39m: Error: The client is closed
+    at RedisClient._RedisClient_sendCommand (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/client/index.js:520:31)
+    at RedisClient.commandsExecutor (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/client/index.js:190:154)
+    at RedisClient.BaseClass.<computed> [as incr] (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/commander.js:8:29)
+    at Object.incr [as increment] (/Users/rishi/book-management-api/src/middlewares/rateLimitMiddleware.js:10:39)
+    at /Users/rishi/book-management-api/node_modules/express-rate-limit/dist/index.cjs:728:52
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at /Users/rishi/book-management-api/node_modules/express-rate-limit/dist/index.cjs:704:5 {"timestamp":"2025-03-08T14:11:56.887Z"}
+[31merror[39m: Redis error in increment: The client is closed {"timestamp":"2025-03-08T14:11:56.892Z"}
+[31merror[39m: Error: The client is closed
+    at RedisClient._RedisClient_sendCommand (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/client/index.js:520:31)
+    at RedisClient.commandsExecutor (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/client/index.js:190:154)
+    at RedisClient.BaseClass.<computed> [as incr] (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/commander.js:8:29)
+    at Object.incr [as increment] (/Users/rishi/book-management-api/src/middlewares/rateLimitMiddleware.js:10:39)
+    at /Users/rishi/book-management-api/node_modules/express-rate-limit/dist/index.cjs:728:52
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at /Users/rishi/book-management-api/node_modules/express-rate-limit/dist/index.cjs:704:5 {"timestamp":"2025-03-08T14:11:56.894Z"}
+[31merror[39m: Redis error in increment: The client is closed {"timestamp":"2025-03-08T14:11:56.899Z"}
+[31merror[39m: Error: The client is closed
+    at RedisClient._RedisClient_sendCommand (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/client/index.js:520:31)
+    at RedisClient.commandsExecutor (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/client/index.js:190:154)
+    at RedisClient.BaseClass.<computed> [as incr] (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/commander.js:8:29)
+    at Object.incr [as increment] (/Users/rishi/book-management-api/src/middlewares/rateLimitMiddleware.js:10:39)
+    at /Users/rishi/book-management-api/node_modules/express-rate-limit/dist/index.cjs:728:52
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at /Users/rishi/book-management-api/node_modules/express-rate-limit/dist/index.cjs:704:5 {"timestamp":"2025-03-08T14:11:56.901Z"}
+  console.log
+    🔍 Search Books Test Response: 500 { error: 'The client is closed' }
+
+      at Object.log (tests/bookRoutes.test.js:148:13)
+
+[31merror[39m: Redis error in increment: The client is closed {"timestamp":"2025-03-08T14:11:56.907Z"}
+[31merror[39m: Error: The client is closed
+    at RedisClient._RedisClient_sendCommand (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/client/index.js:520:31)
+    at RedisClient.commandsExecutor (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/client/index.js:190:154)
+    at RedisClient.BaseClass.<computed> [as incr] (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/commander.js:8:29)
+    at Object.incr [as increment] (/Users/rishi/book-management-api/src/middlewares/rateLimitMiddleware.js:10:39)
+    at /Users/rishi/book-management-api/node_modules/express-rate-limit/dist/index.cjs:728:52
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at /Users/rishi/book-management-api/node_modules/express-rate-limit/dist/index.cjs:704:5 {"timestamp":"2025-03-08T14:11:56.909Z"}
+[31merror[39m: Redis error in increment: The client is closed {"timestamp":"2025-03-08T14:11:56.915Z"}
+[31merror[39m: Error: The client is closed
+    at RedisClient._RedisClient_sendCommand (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/client/index.js:520:31)
+    at RedisClient.commandsExecutor (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/client/index.js:190:154)
+    at RedisClient.BaseClass.<computed> [as incr] (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/commander.js:8:29)
+    at Object.incr [as increment] (/Users/rishi/book-management-api/src/middlewares/rateLimitMiddleware.js:10:39)
+    at /Users/rishi/book-management-api/node_modules/express-rate-limit/dist/index.cjs:728:52
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at /Users/rishi/book-management-api/node_modules/express-rate-limit/dist/index.cjs:704:5 {"timestamp":"2025-03-08T14:11:56.917Z"}
+[31merror[39m: Redis error in increment: The client is closed {"timestamp":"2025-03-08T14:11:56.923Z"}
+[31merror[39m: Error: The client is closed
+    at RedisClient._RedisClient_sendCommand (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/client/index.js:520:31)
+    at RedisClient.commandsExecutor (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/client/index.js:190:154)
+    at RedisClient.BaseClass.<computed> [as incr] (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/commander.js:8:29)
+    at Object.incr [as increment] (/Users/rishi/book-management-api/src/middlewares/rateLimitMiddleware.js:10:39)
+    at /Users/rishi/book-management-api/node_modules/express-rate-limit/dist/index.cjs:728:52
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at /Users/rishi/book-management-api/node_modules/express-rate-limit/dist/index.cjs:704:5 {"timestamp":"2025-03-08T14:11:56.925Z"}
+[31merror[39m: Redis error in increment: The client is closed {"timestamp":"2025-03-08T14:11:56.931Z"}
+[31merror[39m: Error: The client is closed
+    at RedisClient._RedisClient_sendCommand (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/client/index.js:520:31)
+    at RedisClient.commandsExecutor (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/client/index.js:190:154)
+    at RedisClient.BaseClass.<computed> [as incr] (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/commander.js:8:29)
+    at Object.incr [as increment] (/Users/rishi/book-management-api/src/middlewares/rateLimitMiddleware.js:10:39)
+    at /Users/rishi/book-management-api/node_modules/express-rate-limit/dist/index.cjs:728:52
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at /Users/rishi/book-management-api/node_modules/express-rate-limit/dist/index.cjs:704:5 {"timestamp":"2025-03-08T14:11:56.933Z"}
+[31merror[39m: Redis error in increment: The client is closed {"timestamp":"2025-03-08T14:11:56.938Z"}
+[31merror[39m: Error: The client is closed
+    at RedisClient._RedisClient_sendCommand (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/client/index.js:520:31)
+    at RedisClient.commandsExecutor (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/client/index.js:190:154)
+    at RedisClient.BaseClass.<computed> [as incr] (/Users/rishi/book-management-api/node_modules/@redis/client/dist/lib/commander.js:8:29)
+    at Object.incr [as increment] (/Users/rishi/book-management-api/src/middlewares/rateLimitMiddleware.js:10:39)
+    at /Users/rishi/book-management-api/node_modules/express-rate-limit/dist/index.cjs:728:52
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at /Users/rishi/book-management-api/node_modules/express-rate-limit/dist/index.cjs:704:5 {"timestamp":"2025-03-08T14:11:56.940Z"}

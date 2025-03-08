@@ -1,17 +1,14 @@
 const request = require("supertest");
 const app = require("../src/app");
 const sequelize = require("../src/config/db");
-const redisClient = require("../src/middlewares/redisClient"); // ✅ Import Redis client
 
 let token; // Store JWT token
 let bookId; // Store book ID for later tests
 
 beforeAll(async () => {
-  // Sync the database before running tests
-  await sequelize.sync({ force: true });
+  await sequelize.sync({ force: true }); // Reset database for testing
   console.log("✅ Database synced for testing");
 
-  // Register & login a test user
   await request(app).post("/api/auth/register").send({
     username: "testuser",
     password: "password123",
@@ -26,9 +23,8 @@ beforeAll(async () => {
 });
 
 afterAll(async () => {
-  console.log("🔌 Closing MySQL and Redis connections...");
-  await sequelize.close(); // ✅ Close MySQL
-  await redisClient.quit(); // ✅ Close Redis properly
+  console.log("🔌 Cleaning up after book tests...");
+  await sequelize.close();
 });
 
 describe("📚 Book Management API Tests", () => {
@@ -58,12 +54,11 @@ describe("📚 Book Management API Tests", () => {
         genre: "Fiction",
       });
 
-    console.log("🚨 Missing Fields Test Response:", res.statusCode, res.body);
     expect(res.statusCode).toBe(400);
-    expect(res.body).toHaveProperty("error", "\"title\" is required"); // Updated message
-});
+    expect(res.body).toHaveProperty("error", "\"title\" is required"); // Ensure error message
+  });
 
-test("🚨 PUT /api/books/:id - Should reject updating a book with invalid data", async () => {
+  test("🚨 PUT /api/books/:id - Should reject updating a book with invalid data", async () => {
     const res = await request(app)
       .put(`/api/books/${bookId}`)
       .set("Authorization", `Bearer ${token}`)
@@ -74,18 +69,15 @@ test("🚨 PUT /api/books/:id - Should reject updating a book with invalid data"
         genre: "Sci-Fi",
       });
 
-    console.log("🚨 Invalid Update Test Response:", res.statusCode, res.body);
     expect(res.statusCode).toBe(400);
-    expect(res.body).toHaveProperty("error", "\"title\" is not allowed to be empty"); // Updated message
-});
-
+    expect(res.body).toHaveProperty("error", "\"title\" is not allowed to be empty");
+  });
 
   test("🚨 DELETE /api/books/:id - Should return 404 when deleting a non-existent book", async () => {
     const res = await request(app)
       .delete("/api/books/999999") // Non-existent book ID
       .set("Authorization", `Bearer ${token}`);
 
-    console.log("🚨 Delete Non-existent Book Test Response:", res.statusCode, res.body);
     expect(res.statusCode).toBe(404);
     expect(res.body).toHaveProperty("error", "Book not found");
   });
@@ -120,28 +112,16 @@ test("🚨 PUT /api/books/:id - Should reject updating a book with invalid data"
     await request(app)
       .post("/api/books")
       .set("Authorization", `Bearer ${token}`)
-      .send({
-        title: "The Great Gatsby",
-        author: "F. Scott Fitzgerald",
-        published_date: "1925-04-10",
-        genre: "Classic",
-      });
+      .send({ title: "The Great Gatsby", author: "F. Scott Fitzgerald", published_date: "1925-04-10", genre: "Classic" });
 
     await request(app)
       .post("/api/books")
       .set("Authorization", `Bearer ${token}`)
-      .send({
-        title: "Great Expectations",
-        author: "Charles Dickens",
-        published_date: "1861-01-01",
-        genre: "Classic",
-      });
+      .send({ title: "Great Expectations", author: "Charles Dickens", published_date: "1861-01-01", genre: "Classic" });
 
     const res = await request(app)
       .get("/api/books?title=great")
       .set("Authorization", `Bearer ${token}`);
-
-    console.log("🔍 Search Books Test Response:", res.statusCode, res.body);
 
     expect(res.statusCode).toBe(200);
     expect(res.body.books.length).toBeGreaterThan(0);
