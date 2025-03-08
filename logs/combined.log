@@ -1417,3 +1417,25 @@
 {"level":"info","message":"Restored book: ID 1","timestamp":"2025-03-06T22:54:20.118Z"}
 {"level":"info","message":"Created book: The Great Gatsby","timestamp":"2025-03-06T22:54:20.127Z"}
 {"level":"info","message":"Created book: Great Expectations","timestamp":"2025-03-06T22:54:20.134Z"}
+{"level":"info","message":"Created book: 1984","timestamp":"2025-03-07T22:26:08.973Z"}
+{"level":"info","message":"Fetched book: ID 1","timestamp":"2025-03-07T22:26:08.991Z"}
+{"level":"info","message":"Updated book: ID 1","timestamp":"2025-03-07T22:26:09.005Z"}
+{"level":"info","message":"Soft deleted book: ID 1","timestamp":"2025-03-07T22:26:09.013Z"}
+{"level":"warn","message":"Book not found: ID 1","timestamp":"2025-03-07T22:26:09.021Z"}
+{"level":"info","message":"Restored book: ID 1","timestamp":"2025-03-07T22:26:09.029Z"}
+{"level":"info","message":"Created book: The Great Gatsby","timestamp":"2025-03-07T22:26:09.037Z"}
+{"level":"info","message":"Created book: Great Expectations","timestamp":"2025-03-07T22:26:09.043Z"}
+{"level":"info","message":"Created book: 1984","timestamp":"2025-03-07T23:46:10.810Z"}
+{"level":"warn","message":"Book not found for deletion: ID 999999","timestamp":"2025-03-07T23:46:10.833Z"}
+{"level":"info","message":"Soft deleted book: ID 1","timestamp":"2025-03-07T23:46:10.844Z"}
+{"level":"warn","message":"Book not found: ID 1","timestamp":"2025-03-07T23:46:10.850Z"}
+{"level":"info","message":"Restored book: ID 1","timestamp":"2025-03-07T23:46:10.859Z"}
+{"level":"info","message":"Created book: The Great Gatsby","timestamp":"2025-03-07T23:46:10.868Z"}
+{"level":"info","message":"Created book: Great Expectations","timestamp":"2025-03-07T23:46:10.879Z"}
+{"level":"info","message":"Created book: 1984","timestamp":"2025-03-07T23:48:16.152Z"}
+{"level":"warn","message":"Book not found for deletion: ID 999999","timestamp":"2025-03-07T23:48:16.173Z"}
+{"level":"info","message":"Soft deleted book: ID 1","timestamp":"2025-03-07T23:48:16.182Z"}
+{"level":"warn","message":"Book not found: ID 1","timestamp":"2025-03-07T23:48:16.189Z"}
+{"level":"info","message":"Restored book: ID 1","timestamp":"2025-03-07T23:48:16.197Z"}
+{"level":"info","message":"Created book: The Great Gatsby","timestamp":"2025-03-07T23:48:16.205Z"}
+{"level":"info","message":"Created book: Great Expectations","timestamp":"2025-03-07T23:48:16.211Z"}
