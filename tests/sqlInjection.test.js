@@ -1,7 +1,6 @@
 const request = require("supertest");
 const app = require("../src/app");
 const sequelize = require("../src/config/db");
-const redisClient = require("../src/middlewares/redisClient");
 
 let token;
 
@@ -24,10 +23,6 @@ beforeAll(async () => {
 afterAll(async () => {
   console.log("🔌 Closing MySQL and Redis connections...");
   await sequelize.close(); // ✅ Close MySQL connection
-
-  if (redisClient && redisClient.isOpen) {
-    await redisClient.quit(); // ✅ Close Redis properly
-  }
 });
 describe("🔐 SQL Injection Protection Tests", () => {
   test("🚨 Should prevent SQL injection attack in search", async () => {
