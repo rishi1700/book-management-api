@@ -11,12 +11,12 @@ describe("🔒 Authentication & Authorization Tests", () => {
     
     await request(app).post("/api/auth/register").send({
       username: "testuser",
-      password: "password123",
+      password: "Password123@",
     });
 
     const res = await request(app).post("/api/auth/login").send({
       username: "testuser",
-      password: "password123",
+      password: "Password123@",
     });
 
     token = res.body.token;
