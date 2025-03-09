@@ -8,8 +8,8 @@
     "dialect": "mysql"
   },
   "test": {
-    "username": "rishi",
-    "password": "P@ssw0rd",
+    "username": "root",
+    "password": "root",
     "database": "book_management",
     "host": "127.0.0.1",
     "port": 3306,
