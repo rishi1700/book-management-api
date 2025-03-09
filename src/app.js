@@ -8,10 +8,27 @@ const errorMiddleware = require("./middlewares/errorMiddleware");
 const morgan = require("morgan");
 const logger = require("./utils/logger"); // ✅ Import Winston logger
 const swaggerDocs = require("./config/swagger"); // ✅ Import Swagger
+const helmet = require("helmet");
 
 require("dotenv").config();
 
 const app = express();
+
+// ✅ Apply OWASP Security Headers
+app.use(
+  helmet({
+    contentSecurityPolicy: false, // Disable CSP if needed (modify based on frontend setup)
+    crossOriginResourcePolicy: { policy: "same-origin" },
+    crossOriginOpenerPolicy: { policy: "same-origin" },
+    referrerPolicy: { policy: "no-referrer" },
+    frameguard: { action: "deny" }, // Prevents clickjacking
+    dnsPrefetchControl: { allow: false }, // Disable DNS prefetching
+    hidePoweredBy: true, // Removes 'X-Powered-By: Express' header
+    ieNoOpen: true, // Prevents IE downloads from executing
+    noSniff: true, // Prevents MIME sniffing
+    xssFilter: true, // Enables XSS protection
+  })
+);
 
 // ✅ Morgan logging integrated with Winston
 app.use(morgan("combined", { stream: { write: (message) => logger.info(message.trim()) } }));
