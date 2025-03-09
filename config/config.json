@@ -3,7 +3,7 @@
     "username": "rishi",
     "password": "P@ssw0rd",
     "database": "book_management",
-    "host": "3.82.99.77",
+    "host": "mysql",
     "port": 3306,
     "dialect": "mysql"
   },
@@ -19,7 +19,7 @@
     "username": "rishi",
     "password": "P@ssw0rd",
     "database": "book_management",
-    "host": "3.82.99.77",
+    "host": "your-aws-public-ip",
     "port": 3306,
     "dialect": "mysql"
   }

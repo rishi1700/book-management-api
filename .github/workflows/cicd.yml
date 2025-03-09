@@ -35,11 +35,11 @@ jobs:
       - name: 📦 Install Dependencies
         run: npm install
 
-      - name: 🔍 Ensure MySQL Root User Has Access
+      - name: 🔍 Ensure MySQL User & Grant Permissions
         run: |
           sudo apt-get install -y mysql-client
-          mysql -h 127.0.0.1 -u root -proot -e "ALTER USER 'root'@'%' IDENTIFIED WITH caching_sha2_password BY 'root';"
-          mysql -h 127.0.0.1 -u root -proot -e "GRANT ALL PRIVILEGES ON book_management.* TO 'root'@'%';"
+          mysql -h 127.0.0.1 -u root -proot -e "CREATE USER IF NOT EXISTS 'rishi'@'%' IDENTIFIED BY 'P@ssw0rd';"
+          mysql -h 127.0.0.1 -u root -proot -e "GRANT ALL PRIVILEGES ON book_management.* TO 'rishi'@'%';"
           mysql -h 127.0.0.1 -u root -proot -e "FLUSH PRIVILEGES;"
 
       - name: ⏳ Wait for MySQL to be Ready
