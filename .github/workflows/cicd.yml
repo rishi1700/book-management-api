@@ -10,7 +10,7 @@ on:
 
 jobs:
   test:
-    name: Run Tests
+    name: Run Tests in Docker
     runs-on: ubuntu-latest
     
     services:
