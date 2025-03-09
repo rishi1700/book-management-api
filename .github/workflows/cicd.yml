@@ -43,9 +43,9 @@ jobs:
             sleep 3
           done
           echo "❌ MySQL did not start in time" && exit 1
-          
+
       - name: 🚀 Run Migrations
-        run: npx sequelize-cli db:migrate
+        run: npx sequelize-cli db:migrate --env test
 
       - name: 🛡 Run Tests
         run: npm test
