@@ -38,7 +38,7 @@ jobs:
       - name: 🔍 Ensure MySQL Root User Has Access
         run: |
           sudo apt-get install -y mysql-client
-          mysql -h 127.0.0.1 -u root -proot -e "ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY 'root';"
+          mysql -h 127.0.0.1 -u root -proot -e "ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY 'root';"
           mysql -h 127.0.0.1 -u root -proot -e "FLUSH PRIVILEGES;"
 
       - name: ⏳ Wait for MySQL to be Ready
