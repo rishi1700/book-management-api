@@ -35,6 +35,15 @@ jobs:
       - name: 📦 Install Dependencies
         run: npm install
 
+      - name: ⏳ Wait for MySQL to be Ready
+        run: |
+          for i in {1..30}; do
+            nc -z localhost 3306 && echo "✅ MySQL is ready" && exit 0
+            echo "⏳ Waiting for MySQL..."
+            sleep 3
+          done
+          echo "❌ MySQL did not start in time" && exit 1
+          
       - name: 🚀 Run Migrations
         run: npx sequelize-cli db:migrate
 
