@@ -3,7 +3,7 @@
     "username": "rishi",
     "password": "P@ssw0rd",
     "database": "book_management",
-    "host": "localhost",
+    "host": "127.0.0.1",
     "port": 3306,
     "dialect": "mysql"
   },
@@ -11,7 +11,7 @@
     "username": "rishi",
     "password": "P@ssw0rd",
     "database": "book_management",
-    "host": "localhost",
+    "host": "127.0.0.1",
     "port": 3306,
     "dialect": "mysql"
   },
