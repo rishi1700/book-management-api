@@ -14,8 +14,6 @@ dump.rdb
 *.rdb
 
 # 🔄 Database Migrations & Seeds (Optional: Keep if needed)
-migrations/
-seeders/
 
 # 🛠 Jest Test Files & Coverage Reports
 jest.setup.js
