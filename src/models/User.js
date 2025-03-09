@@ -1,7 +1,7 @@
 const { DataTypes } = require("sequelize");
 const sequelize = require("../config/db");
 const bcrypt = require("bcryptjs");
-const logger = require("../utils/logger"); // ✅ Import Winston logger
+const logger = require("../utils/logger");
 
 const User = sequelize.define(
   "User",
@@ -16,7 +16,10 @@ const User = sequelize.define(
       allowNull: false,
       unique: true,
       validate: {
-        len: [4, 20],
+        len: {
+          args: [4, 20], // Enforce length
+          msg: "Username must be between 4 and 20 characters.",
+        },
         isAlphaNumericWithLetters(value) {
           if (!/[a-zA-Z]/.test(value)) {
             throw new Error("Username must contain at least one alphabetic character.");
@@ -28,7 +31,10 @@ const User = sequelize.define(
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        len: [8, 100],
+        len: {
+          args: [8, 100],
+          msg: "Password must be at least 8 characters long.",
+        },
         isStrongPassword(value) {
           if (!/(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*])/.test(value)) {
             throw new Error(
@@ -43,21 +49,16 @@ const User = sequelize.define(
     timestamps: true,
     hooks: {
       beforeValidate: (user) => {
-        logger.info(`Validating username: ${user.username}`);
         user.username = user.username.toLowerCase();
       },
       beforeCreate: async (user) => {
-        logger.info(`Creating new user: ${user.username}`);
         const salt = await bcrypt.genSalt(10);
         user.password = await bcrypt.hash(user.password, salt);
-        logger.info("Password hashed successfully before saving.");
       },
       beforeUpdate: async (user) => {
         if (user.changed("password")) {
-          logger.info(`Updating password for user: ${user.username}`);
           const salt = await bcrypt.genSalt(10);
           user.password = await bcrypt.hash(user.password, salt);
-          logger.info("New password hashed successfully before saving.");
         }
       },
     },
