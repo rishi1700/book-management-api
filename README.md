@@ -116,7 +116,7 @@ docker exec -it book-api npx sequelize-cli db:migrate
 - **Swagger Documentation**: 👉 [http://localhost:5000/api-docs](http://localhost:5000/api-docs)
 - **Connect to MySQL (Inside Docker)**:
   ```bash
-  docker exec -it book-db mysql -u rishi -pP@ssw0rd
+  docker exec -it book-db mysql -u user -pP@ssw0rd
   ```
 
 ### **4️⃣ Stop Docker Containers**
