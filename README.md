@@ -203,44 +203,43 @@ $env:NODE_ENV="test"; npm test
 
 ---
 
-🛠️ Individual Tests
+## 🛠️ **Individual Tests**
 Here are the test categories and how to run them:
 
-🔹 Authentication Tests
-bash
-Copy
-Edit
+### 🔹 **Authentication Tests**
+```bash
 npm test tests/auth.test.js
-✅ Register new user
-✅ Login with correct credentials
-🚨 Fail login with incorrect password
-🚨 Block unauthorized access to protected routes
-🔹 Book Routes Tests
-bash
-Copy
-Edit
+```
+- ✅ Register new user  
+- ✅ Login with correct credentials  
+- 🚨 Fail login with incorrect password  
+- 🚨 Block unauthorized access to protected routes  
+
+### 🔹 **Book Routes Tests**
+```bash
 npm test tests/bookRoutes.test.js
-✅ Create a new book
-🚨 Reject creating a book with missing fields
-✅ Get books with pagination and filters
-🚨 Fail updating a non-existent book
-✅ Soft delete a book
-✅ Restore a soft-deleted book
-🔹 Rate Limiting Tests
-bash
-Copy
-Edit
+```
+- ✅ Create a new book  
+- 🚨 Reject creating a book with missing fields  
+- ✅ Get books with pagination and filters  
+- 🚨 Fail updating a non-existent book  
+- ✅ Soft delete a book  
+- ✅ Restore a soft-deleted book  
+
+### 🔹 **Rate Limiting Tests**
+```bash
 npm test tests/rateLimit.test.js
-✅ Block excessive requests beyond the limit
-🚨 Prevent rate-limit bypass using fake headers
-🔹 Security & Validation Tests
-bash
-Copy
-Edit
+```
+- ✅ Block excessive requests beyond the limit  
+- 🚨 Prevent rate-limit bypass using fake headers  
+
+### 🔹 **Security & Validation Tests**
+```bash
 npm test tests/security.test.js
-✅ Prevent SQL Injection
-✅ Prevent XSS attacks
-✅ Block unauthorized CORS requests
+```
+- ✅ Prevent SQL Injection  
+- ✅ Prevent XSS attacks  
+- ✅ Block unauthorized CORS requests  
 
 ---
 
