@@ -1,26 +1,19 @@
 {
-  "development": {
-    "username": "rishi",
-    "password": "P@ssw0rd",
-    "database": "book_management",
-    "host": "127.0.0.1",
-    "port": 3306,
-    "dialect": "mysql"
-  },
-  "test": {
-    "username": "rishi",
-    "password": "P@ssw0rd",
-    "database": "book_management",
-    "host": "127.0.0.1",
-    "port": 3306,
-    "dialect": "mysql"
-  },
-  "production": {
-    "username": "rishi",
-    "password": "P@ssw0rd",
-    "database": "book_management",
-    "host": "3.82.99.77",
-    "port": 3306,
-    "dialect": "mysql"
+    "development": {
+      "username": "rishi",
+      "password": "P@ssw0rd",
+      "database": "book_management",
+      "host": "mysql",
+      "port": 3306,
+      "dialect": "mysql"
+    },
+    "production": {
+      "username": "rishi",
+      "password": "P@ssw0rd",
+      "database": "book_management",
+      "host": "mysql",
+      "port": 3306,
+      "dialect": "mysql"
+    }
   }
-}
+  
