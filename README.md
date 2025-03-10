@@ -1,215 +1,223 @@
+Here is the updated **README** file with the **Docker configuration section removed**, as it's already in the repo.
+
+---
+
 # 📚 Book Management API
 
-## 🚀 Overview
+This API provides a RESTful interface for managing a book catalog, including CRUD operations, authentication, validation, and security features.
 
-The **Book Management API** is a RESTful web service for managing a catalog of books. It provides full **CRUD operations**, **authentication**, **pagination**, **rate limiting**, and is **Dockerized** for easy deployment. Designed with **production-readiness**, the API is highly scalable and follows best practices for security and maintainability.
-
-## 🔥 Features
-
-- **CRUD Operations**: Create, Read, Update, and Delete books
-- **Authentication & Authorization**: Uses JWT-based authentication
-- **Input Validation**: Ensures data integrity with Joi validation
-- **Security Features**:
-  - SQL Injection protection
-  - XSS protection
-  - Rate limiting to prevent abuse
-- **Soft Deletes & Restore**: Allows soft deletion and restoration of books
-- **Swagger API Documentation**: Interactive API docs at `/api-docs`
-- **Logging**: Winston logger for production-grade logging
-- **Database Support**: Works with MySQL/PostgreSQL
-- **Dockerized Deployment**: Runs in containers for easy cloud hosting
-- **AWS Lambda Compatible**: Deployable as a serverless function
+## 🚀 Features
+- User Authentication (JWT-based)
+- CRUD operations for books
+- Input validation and SQL injection protection
+- Rate limiting to prevent abuse
+- Secure password hashing
+- Logging with Winston
+- API documentation using Swagger
+- MySQL database support with Sequelize ORM
+- Dockerized environment for easy deployment
+- Unit & Integration Testing with Jest & Supertest
+- CI/CD setup using GitHub Actions
 
 ---
 
-## 🛠️ Tech Stack
+## 🔥 Prerequisites
+Before running the API, ensure you have the following installed:
 
-- **Backend**: Node.js, Express.js
-- **Database**: MySQL (Sequelize ORM)
-- **Authentication**: JWT (JSON Web Tokens)
-- **Logging**: Winston Logger
-- **API Documentation**: Swagger
-- **Security**: Helmet, Joi validation, Rate limiting, OWASP Security Headers
-- **Deployment**: Docker, AWS Lambda (Serverless), CI/CD (GitHub Actions)
-- **Testing:** Jest, Supertest
+✅ [Node.js (v18+)](https://nodejs.org/)  
+✅ [Docker & Docker Compose](https://www.docker.com/)  
+✅ [Git](https://git-scm.com/)  
+✅ MySQL (for local setup without Docker)  
+✅ `cross-env` for Windows users (for running tests)  
 
 ---
 
-## 📌 API Endpoints
+## 🛠️ How to Run the API
 
-### 🔐 Authentication Endpoints
-
-| Method | Endpoint             | Description           |
-| ------ | -------------------- | --------------------- |
-| POST   | `/api/auth/register` | Register a new user   |
-| POST   | `/api/auth/login`    | Login & get JWT token |
-
-### 📚 Book Management Endpoints
-
-| Method | Endpoint                 | Description                               |
-| ------ | ------------------------ | ----------------------------------------- |
-| GET    | `/api/books`             | Get all books (with filters & pagination) |
-| GET    | `/api/books/:id`         | Get a book by ID                          |
-| POST   | `/api/books`             | Create a new book                         |
-| PUT    | `/api/books/:id`         | Update a book                             |
-| DELETE | `/api/books/:id`         | Soft delete a book                        |
-| POST   | `/api/books/:id/restore` | Restore a deleted book                    |
-
----
-
-## 🔧 Installation & Setup
-
-### 🛠 Prerequisites
-
-- **Node.js** (v18+)
-- **MySQL** database
-- **Docker** (optional for containerized deployment)
-
-### 📦 Install Dependencies
-
-```bash
-npm install
-```
-
-### 📝 Setup Environment Variables
-
-Create a `.env` file and configure:
-
-```env
-NODE_ENV=production
-PORT=5000
-DB_HOST=localhost
-DB_PORT=3306
-DB_USER=root
-DB_PASSWORD=password
-DB_NAME=booksdb
-JWT_SECRET=your_secret_key
-```
-
-### 🚀 Run API in Development Mode
-
-```bash
-node src/app.js
-```
-
-### 🐳 Run with Docker
-
-```bash
-docker-compose up --build
-```
-
----
-
-## 🚀 Post-Cloning Setup (For New Users)
-
-After cloning the repository, follow these steps to set up the project:
-
-1️⃣ **Clone the repository:**
-
+### **1️⃣ Clone the Repository**
 ```bash
 git clone https://github.com/your-username/book-management-api.git
 cd book-management-api
 ```
 
-2️⃣ **Install dependencies:**
-
-```bash
-npm install
-```
-
-3️⃣ **Create a ****************`.env`**************** file:**
-
+### **2️⃣ Set Up Environment Variables**
+Create a `.env` file in the project root:
 ```bash
 cp .env.example .env
 ```
-- If running locally, set `DB_HOST=127.0.0.1`
-- If running with Docker, set `DB_HOST=mysql`
 
-
-4️⃣ **Run database migrations & seeders (if required):**
-
-```bash
-npx sequelize-cli db:migrate
-npx sequelize-cli db:seed:all
-```
-
-5️⃣ **Start the API:**
-
-```bash
-npm start
-```
-
-Or, if using Docker:
-
-```bash
-docker-compose up --build or docker compose up --build (for macos)
-```
-
-6️⃣ **Access the API in Swagger UI:**
-👉 [http://localhost:5000/api-docs](http://localhost:5000/api-docs)
-
----
-
-## 🚀 Deployment
-
-### 🆓 Free Deployment Options
-
-- **Render**: [https://render.com/](https://render.com/)
-- **Railway**: [https://railway.app/](https://railway.app/)
-- **Fly.io**: [https://fly.io/](https://fly.io/)
-
-### 🏗️ Deploying to AWS Lambda (Serverless)
-
-```bash
-zip -r deploy.zip .
-aws lambda update-function-code --function-name book-api --zip-file fileb://deploy.zip
+Ensure your `.env` contains:
+```plaintext
+NODE_ENV=production
+DB_NAME=book_management
+DB_USER=rishi
+DB_PASS=P@ssw0rd
+DB_HOST=mysql  # ⬅ Use `mysql` for Docker
+DB_PORT=3306
+JWT_SECRET=your_secret_key
 ```
 
 ---
 
-## 📖 API Documentation
+## 🛠️ Running API with Docker
 
-After running the API, access **Swagger UI**:
-👉 [http://localhost:5000/api-docs](http://localhost:5000/api-docs)
+### **3️⃣ Run MySQL & API in Docker**
+```bash
+docker-compose up --build
+```
 
----
-
-## 🔥 Security & Best Practices
-
-- **SQL Injection Prevention** ✅
-- **Rate Limiting (100 reqs/15 min)** ✅
-- **JWT Authentication** ✅
-- **CORS Protection** ✅
-- **Helmet Security Headers** ✅
-- **Logging with Winston** ✅
+### **4️⃣ Apply Database Migrations Inside Docker**
+```bash
+docker exec -it book-api npx sequelize-cli db:migrate
+```
 
 ---
 
-## 🛠️ CI/CD & Testing
+## 🛠️ Running Tests (Windows Users Must Install `cross-env`)
 
-- **Automated Deployment**: GitHub Actions
-- **Unit Tests**: Jest + Supertest
-- **Security Tests**: SQL Injection, XSS protection
-
-Run tests:
-
+### **Linux/macOS**
 ```bash
 npm test
 ```
 
+### **Windows (Fix 'NODE_ENV is not recognized' Error)**
+1️⃣ Install `cross-env` as a dependency:
+```powershell
+npm install cross-env --save-dev
+```
+
+2️⃣ Modify the `package.json` test script:
+- Open `package.json` and find the `scripts` section.
+- Change the test script **from**:
+  ```json
+  "test": "NODE_ENV=test jest --detectOpenHandles --forceExit"
+  ```
+  **To:**
+  ```json
+  "test": "cross-env NODE_ENV=test jest --detectOpenHandles --forceExit"
+  ```
+
+3️⃣ Run the tests again:
+```powershell
+npm test
+```
+✅ This will now **work on Windows**.
+
+Alternatively, manually set the environment variable in PowerShell:
+```powershell
+$env:NODE_ENV="test"; npm test
+```
+✅ This **sets `NODE_ENV=test` just for this command.**
+
 ---
 
-## 📜 License
+## 🛠️ **Running Without Docker (Manually on Local Machine)**
 
-This project is **open-source** under the MIT License.
+### **1️⃣ Install Dependencies**
+```bash
+npm install
+```
+
+### **2️⃣ Start MySQL Manually**
+Ensure MySQL is running locally on **port `3306`** and update your `.env` file:
+```plaintext
+DB_HOST=127.0.0.1  # ⬅ Use this for local MySQL
+```
+
+### **3️⃣ Apply Migrations**
+```bash
+npx sequelize-cli db:migrate
+```
+
+### **4️⃣ Start the API**
+```bash
+npm start
+```
 
 ---
 
-## 🏆 Contributors
+## 📌 API Endpoints
 
-- **Rishi** - Developer & Security Engineer
+| HTTP Method | Endpoint | Description |
+|------------|----------|-------------|
+| **POST** | `/api/auth/register` | Register a new user |
+| **POST** | `/api/auth/login` | Login and get a JWT token |
+| **GET** | `/api/books` | Get all books (with filtering, sorting, pagination) |
+| **GET** | `/api/books/:id` | Get a book by ID |
+| **POST** | `/api/books` | Create a new book (Auth required) |
+| **PUT** | `/api/books/:id` | Update a book (Auth required) |
+| **DELETE** | `/api/books/:id` | Soft delete a book (Auth required) |
+| **POST** | `/api/books/:id/restore` | Restore a soft-deleted book (Auth required) |
 
-💬 **Have questions?** Open an issue or contribute via pull requests!
+---
 
-🚀 **Happy Coding!**
+## 📌 API Testing
 
+### ✅ **Swagger API Documentation**
+Once the API is running, open **Swagger UI** in your browser:
+👉 **http://localhost:5000/api-docs**
+
+### ✅ **Test with cURL or Postman**
+#### **Register a New User**
+```bash
+curl -X POST http://localhost:5000/api/auth/register \
+     -H "Content-Type: application/json" \
+     -d '{"username": "testuser", "password": "P@ssword123"}'
+```
+
+#### **Login and Get a Token**
+```bash
+curl -X POST http://localhost:5000/api/auth/login \
+     -H "Content-Type: application/json" \
+     -d '{"username": "testuser", "password": "P@ssword123"}'
+```
+🔹 Copy the **JWT token** from the response.
+
+#### **Create a New Book (Authenticated Request)**
+```bash
+curl -X POST http://localhost:5000/api/books \
+     -H "Content-Type: application/json" \
+     -H "Authorization: Bearer YOUR_JWT_TOKEN" \
+     -d '{"title": "1984", "author": "George Orwell", "published_date": "1949-06-08", "genre": "Dystopian"}'
+```
+
+---
+
+## 🛠️ **CI/CD Setup with GitHub Actions**
+### **Setting Up GitHub Secrets for Deployment**
+
+1️⃣ **Go to GitHub Repository → Settings → Secrets and Variables → Actions → New Repository Secret**  
+2️⃣ Add the following secrets:
+
+| Secret Name | Description |
+|------------|-------------|
+| `SERVER_HOST` | Your AWS server IP |
+| `SERVER_USER` | Your SSH user (e.g., `ubuntu`) |
+| `SSH_PRIVATE_KEY` | Your private SSH key for deployment |
+
+---
+
+## 🛑 Stopping the API
+
+### **If running with Docker:**
+```bash
+docker-compose down
+```
+
+### **If running manually:**
+Press **`CTRL + C`** in the terminal.
+
+---
+
+## 🎯 Final Summary
+
+| **Setup Type**        | **Command to Run** |
+|----------------------|----------------|
+| **Run with Docker**  | `docker-compose up --build` |
+| **Apply Migrations** (Docker) | `docker exec -it book-api npx sequelize-cli db:migrate` |
+| **Run without Docker** | `npm install && npm start` |
+| **Stop Docker** | `docker-compose down` |
+
+🚀 **Now your API is fully functional!** Let me know if you need any further refinements. 🎯
+
+---
