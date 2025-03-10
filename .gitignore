@@ -18,7 +18,7 @@ dump.rdb
 seeders/
 
 # 🛠 Jest Test Files & Coverage Reports
-jest.setup.js
+
 jest.global-teardown.js
 coverage/
 
