@@ -262,6 +262,4 @@ Press **`CTRL + C`** in the terminal.
 | **Run Tests (Linux/macOS)** | `npm test` |
 | **Run Tests (Windows)** | `npm test` (After `cross-env` setup) |
 
-🚀 **Now your API is fully functional!** Let me know if you need further refinements. 🎯
-
 ---
