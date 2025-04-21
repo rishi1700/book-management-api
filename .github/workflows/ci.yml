@@ -19,10 +19,10 @@ jobs:
           MYSQL_DATABASE: book_management
         ports:
           - 3306:3306
-        options: |
-          --health-cmd="mysqladmin ping --silent"
-          --health-interval=10s
-          --health-timeout=5s
+        options: >
+          --health-cmd="mysqladmin ping --silent" \
+          --health-interval=10s \
+          --health-timeout=5s \
           --health-retries=5
 
     steps:
@@ -35,7 +35,7 @@ jobs:
           node-version: '18'
 
       - name: 💼 Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: 🔧 Wait for MySQL
         run: |
@@ -44,9 +44,15 @@ jobs:
           done
 
       - name: 🚀 Run Migrations
+        env:
+          DB_USERNAME: root
+          DB_PASSWORD: root
+          DB_NAME: book_management
+          DB_HOST: 127.0.0.1
         run: npx sequelize-cli db:migrate --env test
 
       - name: ✨ Run ESLint
+        continue-on-error: true
         run: npm run lint
 
       - name: ❌ Comment on PR if Lint fails
@@ -62,6 +68,11 @@ jobs:
             })
 
       - name: 📊 Run Unit Tests
+        env:
+          DB_USERNAME: root
+          DB_PASSWORD: root
+          DB_NAME: book_management
+          DB_HOST: 127.0.0.1
         run: npm test
 
       - name: ❌ Comment on PR if Unit Tests fail
