@@ -45,8 +45,8 @@ jobs:
 
       - name: 🚀 Run Migrations
         env:
-          DB_USERNAME: root
-          DB_PASSWORD: root
+          DB_USER: root
+          DB_PASS: root
           DB_NAME: book_management
           DB_HOST: 127.0.0.1
         run: npx sequelize-cli db:migrate --env test
@@ -69,8 +69,8 @@ jobs:
 
       - name: 📊 Run Unit Tests
         env:
-          DB_USERNAME: root
-          DB_PASSWORD: root
+          DB_USER: root
+          DB_PASS: root
           DB_NAME: book_management
           DB_HOST: 127.0.0.1
         run: npm test
