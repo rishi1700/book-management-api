@@ -19,8 +19,8 @@ jobs:
           MYSQL_DATABASE: book_management
         ports:
           - 3306:3306
-        options: |
-          --health-cmd="mysqladmin ping --silent"
+        options: >
+          --health-cmd="mysqladmin ping -uroot -proot --silent"
           --health-interval=10s
           --health-timeout=5s
           --health-retries=5
@@ -97,7 +97,7 @@ jobs:
           format: "HTML"
           out: "reports"
 
-      - name: 📤 Upload OWASP Report
+      - name: 📄 Upload OWASP Report
         uses: actions/upload-artifact@v4
         with:
           name: dependency-check-report
