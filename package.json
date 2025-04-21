@@ -1,8 +1,8 @@
 {
   "name": "book-management-api",
   "version": "1.0.0",
-  "main": "index.js",
   "type": "module",
+  "main": "index.js",
   "scripts": {
     "start": "node src/app.js",
     "test": "NODE_ENV=test jest --detectOpenHandles --forceExit",
