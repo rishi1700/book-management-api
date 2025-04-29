@@ -79,8 +79,15 @@ jobs:
         env:
           LOGSTASH_URL: ${{ secrets.LOGSTASH_URL }}
         run: |
-          curl -X POST "$LOGSTASH_URL" -H "Content-Type: application/json" -d @<(jq -n \
-            --arg lint "$(cat eslint-log.txt)" \
-            --arg test "$(cat test-log.txt)" \
-            --arg audit "$(cat audit-log.txt)" \
-            '{lint_log: $lint, test_log: $test, audit_log: $audit, timestamp: now | todate}')
+          echo "Preparing payload..."
+        # Ensure empty content if file doesn't exist
+          ESLINT_LOG="$(cat eslint-log.txt || echo '')"
+          TEST_LOG="$(cat test-log.txt || echo '')"
+          AUDIT_LOG="$(cat audit-log.txt || echo '')"
+    
+          echo "Shipping logs to Logstash..."
+          jq -n --arg lint "$ESLINT_LOG" --arg test "$TEST_LOG" --arg audit "$AUDIT_LOG" \
+          '{lint_log: $lint, test_log: $test, audit_log: $audit, timestamp: now | todate}' > payload.json
+
+          curl -X POST "$LOGSTASH_URL" -H "Content-Type: application/json" --data-binary @payload.json
+
