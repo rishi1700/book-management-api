@@ -19,7 +19,11 @@ jobs:
           MYSQL_DATABASE: book_management
         ports:
           - 3306:3306
-        options: --health-cmd="mysqladmin ping -uroot -proot --silent" --health-interval=10s --health-timeout=5s --health-retries=5
+        options: >
+          --health-cmd="mysqladmin ping -uroot -proot --silent" \
+          --health-interval=10s \
+          --health-timeout=5s \
+          --health-retries=5
 
     steps:
       - name: 📂 Checkout code
@@ -69,7 +73,7 @@ jobs:
           format: "HTML"
           out: "reports"
 
-      - name: 📤 Upload OWASP Report
+      - name: 📄 Upload OWASP Report
         uses: actions/upload-artifact@v4
         with:
           name: dependency-check-report
@@ -80,14 +84,12 @@ jobs:
           LOGSTASH_URL: ${{ secrets.LOGSTASH_URL }}
         run: |
           echo "Preparing payload..."
-        # Ensure empty content if file doesn't exist
           ESLINT_LOG="$(cat eslint-log.txt || echo '')"
           TEST_LOG="$(cat test-log.txt || echo '')"
           AUDIT_LOG="$(cat audit-log.txt || echo '')"
-    
+
           echo "Shipping logs to Logstash..."
           jq -n --arg lint "$ESLINT_LOG" --arg test "$TEST_LOG" --arg audit "$AUDIT_LOG" \
             '{lint_log: $lint, test_log: $test, audit_log: $audit, timestamp: now | todate}' > payload.json
 
           curl -X POST "$LOGSTASH_URL" -H "Content-Type: application/json" --data-binary @payload.json
-
