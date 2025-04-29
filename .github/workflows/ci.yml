@@ -1,4 +1,4 @@
-name: CI - DevSecOps Pipeline with ELK Integration
+name: CI - Lint, Test, Security & Ship Logs
 
 on:
   push:
@@ -11,80 +11,78 @@ jobs:
     name: Lint, Test, Scan & Ship Logs
     runs-on: ubuntu-latest
 
-    services:
-      mysql:
-        image: mysql:8.0
-        env:
-          MYSQL_ROOT_PASSWORD: root
-          MYSQL_DATABASE: book_management
-        ports:
-          - 3306:3306
-        options: >
-          --health-cmd="mysqladmin ping -uroot -proot --silent" \
-          --health-interval=10s \
-          --health-timeout=5s \
-          --health-retries=5
+services:
+  mysql:
+    image: mysql:8.0
+    env:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: book_management
+    ports:
+      - 3306:3306
+    options: >
+      --health-cmd="mysqladmin ping -uroot -proot --silent" \
+      --health-interval=10s \
+      --health-timeout=5s \
+      --health-retries=5
 
-    steps:
-      - name: 📂 Checkout code
-        uses: actions/checkout@v3
+steps:
+  - name: 📂 Checkout code
+    uses: actions/checkout@v3
 
-      - name: 🧠 Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
+  - name: 🧠 Set up Node.js
+    uses: actions/setup-node@v3
+    with:
+      node-version: '18'
 
-      - name: 💼 Install dependencies
-        run: npm install
+  - name: 💼 Install dependencies
+    run: npm install
 
-      - name: 🔧 Wait for MySQL
-        run: |
-          until mysqladmin ping -h 127.0.0.1 -uroot -proot --silent; do
-            echo "Waiting for MySQL..." && sleep 3;
-          done
+  - name: 🔧 Wait for MySQL
+    run: |
+      until mysqladmin ping -h 127.0.0.1 -uroot -proot --silent; do
+        echo "Waiting for MySQL..." && sleep 3;
+      done
 
-      - name: 🚀 Run DB Migrations
-        env:
-          DB_USERNAME: root
-          DB_PASSWORD: root
-          DB_NAME: book_management
-          DB_HOST: 127.0.0.1
-        run: npx sequelize-cli db:migrate --env test
+  - name: 🚀 Run Migrations
+    env:
+      DB_USERNAME: root
+      DB_PASSWORD: root
+      DB_NAME: book_management
+      DB_HOST: 127.0.0.1
+    run: npx sequelize-cli db:migrate --env test
 
-      - name: ✨ Run ESLint
-        continue-on-error: true
-        run: npm run lint
+  - name: ✨ Run ESLint
+    continue-on-error: true
+    run: npm run lint | tee eslint-log.txt
 
-      - name: 📊 Run Unit Tests
-        env:
-          DB_USERNAME: root
-          DB_PASSWORD: root
-          DB_NAME: book_management
-          DB_HOST: 127.0.0.1
-        run: npm test
+  - name: 📊 Run Unit Tests
+    env:
+      DB_USERNAME: root
+      DB_PASSWORD: root
+      DB_NAME: book_management
+      DB_HOST: 127.0.0.1
+    run: npm test | tee test-log.txt
 
-      - name: 🔍 Run npm audit
-        run: npm audit --audit-level=high || true
+  - name: 🔍 Run npm audit for vulnerability scan
+    run: npm audit --audit-level=high || true | tee audit-log.txt
 
-      - name: 🛡️ OWASP Dependency Check
-        uses: dependency-check/Dependency-Check_Action@main
-        with:
-          project: "book-management-api"
-          format: "HTML"
-          out: "reports"
+  - name: 🛡️ Run OWASP Dependency Check
+    uses: dependency-check/Dependency-Check_Action@main
+    with:
+      project: "book-management-api"
+      format: "HTML"
+      out: "reports"
 
-      - name: 📤 Upload Security Reports
-        uses: actions/upload-artifact@v4
-        with:
-          name: dependency-check-report
-          path: reports
+  - name: 📤 Upload OWASP Report
+    uses: actions/upload-artifact@v4
+    with:
+      name: dependency-check-report
+      path: reports
 
-      - name: 🪵 Ship Logs to ELK via HTTP
-        if: always()
-        env:
-          ELK_ENDPOINT: ${{ secrets.ELK_ENDPOINT }}
-        run: |
-          echo "🚀 Sending job logs to ELK"
-          curl -X POST "$ELK_ENDPOINT" \
-            -H "Content-Type: application/json" \
-            -d "{\"job\":\"lint-test-security-log\",\"status\":\"${{ job.status }}\",\"timestamp\":\"$(date -u +"%Y-%m-%dT%H:%M:%SZ")\"}"
+  - name: 🚀 Ship logs to Logstash
+    env:
+      LOGSTASH_URL: ${{ secrets.LOGSTASH_URL }}
+    run: |
+      curl -X POST "$LOGSTASH_URL" -H "Content-Type: application/json" -d @<(jq -n --arg lint "$(cat eslint-log.txt)" --arg test "$(cat test-log.txt)" --arg audit "$(cat audit-log.txt)" '{lint_log: $lint, test_log: $test, audit_log: $audit, timestamp: now | todate}')
+```
+
