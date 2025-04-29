@@ -1,4 +1,4 @@
-name: CI/CD - Full DevSecOps Pipeline
+name: CI - DevSecOps Pipeline with ELK Integration
 
 on:
   push:
@@ -7,18 +7,9 @@ on:
     branches: ["main"]
 
 jobs:
-  lint-test-security:
-    name: Lint, Test, and Scan
+  lint-test-security-log:
+    name: Lint, Test, Scan & Ship Logs
     runs-on: ubuntu-latest
-
-    # Env for app tests
-    env:
-      DB_USER: root
-      DB_PASS: root
-      DB_NAME: book_management
-      DB_HOST: 127.0.0.1
-      DB_PORT: 3306
-      JWT_SECRET: my_secret_key
 
     services:
       mysql:
@@ -28,6 +19,11 @@ jobs:
           MYSQL_DATABASE: book_management
         ports:
           - 3306:3306
+        options: >
+          --health-cmd="mysqladmin ping -uroot -proot --silent" \
+          --health-interval=10s \
+          --health-timeout=5s \
+          --health-retries=5
 
     steps:
       - name: 📂 Checkout code
@@ -43,76 +39,52 @@ jobs:
 
       - name: 🔧 Wait for MySQL
         run: |
-          echo "Sleeping for MySQL to initialize..."
-          sleep 30
-          until mysqladmin ping -h $DB_HOST -u$DB_USER -p$DB_PASS --silent; do
+          until mysqladmin ping -h 127.0.0.1 -uroot -proot --silent; do
             echo "Waiting for MySQL..." && sleep 3;
           done
 
-      - name: 🚀 Run Migrations
+      - name: 🚀 Run DB Migrations
+        env:
+          DB_USERNAME: root
+          DB_PASSWORD: root
+          DB_NAME: book_management
+          DB_HOST: 127.0.0.1
         run: npx sequelize-cli db:migrate --env test
 
       - name: ✨ Run ESLint
-        run: npm run lint
         continue-on-error: true
+        run: npm run lint
 
       - name: 📊 Run Unit Tests
+        env:
+          DB_USERNAME: root
+          DB_PASSWORD: root
+          DB_NAME: book_management
+          DB_HOST: 127.0.0.1
         run: npm test
 
-      - name: 🔍 Run npm audit for vulnerability scan
+      - name: 🔍 Run npm audit
         run: npm audit --audit-level=high || true
 
-      - name: 🛡️ Run OWASP Dependency Check
+      - name: 🛡️ OWASP Dependency Check
         uses: dependency-check/Dependency-Check_Action@main
         with:
           project: "book-management-api"
           format: "HTML"
           out: "reports"
 
-      - name: 📄 Upload OWASP Report
+      - name: 📤 Upload Security Reports
         uses: actions/upload-artifact@v4
         with:
           name: dependency-check-report
-          path: reports  terraform-infra:
-    name: Validate & Deploy Cloud Infrastructure
-    runs-on: ubuntu-latest
-    needs: lint-test-security
+          path: reports
 
-    steps:
-      - name: 📂 Checkout code
-        uses: actions/checkout@v3
-
-      - name: ⚙️ Setup Terraform
-        uses: hashicorp/setup-terraform@v3
-        with:
-          terraform_version: 1.6.6
-
-      - name: 🔐 Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v2
-        with:
-          role-to-assume: \${{ secrets.AWS_ROLE_TO_ASSUME }}
-          aws-region: us-east-1
-
-      - name: 🏗️ Terraform Init & Validate Phase 1
+      - name: 🪵 Ship Logs to ELK via HTTP
+        if: always()
+        env:
+          ELK_ENDPOINT: ${{ secrets.ELK_ENDPOINT }}
         run: |
-          terraform -chdir=phase1-infra-logging init -input=false
-          terraform -chdir=phase1-infra-logging fmt -recursive
-          terraform -chdir=phase1-infra-logging validate
-
-      - name: 🏗️ Terraform Init & Validate Phase 2
-        run: |
-          terraform -chdir=phase2-iam-security-services init -input=false
-          terraform -chdir=phase2-iam-security-services fmt -recursive
-          terraform -chdir=phase2-iam-security-services validate
-
-      - name: 🏗️ Terraform Init & Validate Phase 3
-        run: |
-          terraform -chdir=phase3-threat-detection-response init -input=false
-          terraform -chdir=phase3-threat-detection-response fmt -recursive
-          terraform -chdir=phase3-threat-detection-response validate
-
-      - name: 🚀 Terraform Apply All Phases
-        run: |
-          terraform -chdir=phase1-infra-logging apply -auto-approve
-          terraform -chdir=phase2-iam-security-services apply -auto-approve
-          terraform -chdir=phase3-threat-detection-response apply -auto-approve
+          echo "🚀 Sending job logs to ELK"
+          curl -X POST "$ELK_ENDPOINT" \
+            -H "Content-Type: application/json" \
+            -d "{\"job\":\"lint-test-security-log\",\"status\":\"${{ job.status }}\",\"timestamp\":\"$(date -u +"%Y-%m-%dT%H:%M:%SZ")\"}"
