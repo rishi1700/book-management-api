@@ -73,4 +73,46 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: dependency-check-report
-          path: reports
+          path: reports  terraform-infra:
+    name: Validate & Deploy Cloud Infrastructure
+    runs-on: ubuntu-latest
+    needs: lint-test-security
+
+    steps:
+      - name: 📂 Checkout code
+        uses: actions/checkout@v3
+
+      - name: ⚙️ Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: 1.6.6
+
+      - name: 🔐 Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          role-to-assume: \${{ secrets.AWS_ROLE_TO_ASSUME }}
+          aws-region: us-east-1
+
+      - name: 🏗️ Terraform Init & Validate Phase 1
+        run: |
+          terraform -chdir=phase1-infra-logging init -input=false
+          terraform -chdir=phase1-infra-logging fmt -recursive
+          terraform -chdir=phase1-infra-logging validate
+
+      - name: 🏗️ Terraform Init & Validate Phase 2
+        run: |
+          terraform -chdir=phase2-iam-security-services init -input=false
+          terraform -chdir=phase2-iam-security-services fmt -recursive
+          terraform -chdir=phase2-iam-security-services validate
+
+      - name: 🏗️ Terraform Init & Validate Phase 3
+        run: |
+          terraform -chdir=phase3-threat-detection-response init -input=false
+          terraform -chdir=phase3-threat-detection-response fmt -recursive
+          terraform -chdir=phase3-threat-detection-response validate
+
+      - name: 🚀 Terraform Apply All Phases
+        run: |
+          terraform -chdir=phase1-infra-logging apply -auto-approve
+          terraform -chdir=phase2-iam-security-services apply -auto-approve
+          terraform -chdir=phase3-threat-detection-response apply -auto-approve
