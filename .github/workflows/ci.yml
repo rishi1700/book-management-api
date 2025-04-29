@@ -47,6 +47,8 @@ jobs:
           DB_PASSWORD: root
           DB_NAME: book_management
           DB_HOST: 127.0.0.1
+          DB_PORT: 3306
+          NODE_ENV: test
         run: npx sequelize-cli db:migrate --env test
 
       - name: ✨ Run ESLint
