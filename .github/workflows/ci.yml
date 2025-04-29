@@ -59,6 +59,8 @@ jobs:
           DB_PASSWORD: root
           DB_NAME: book_management
           DB_HOST: 127.0.0.1
+          DB_PORT: 3306
+          NODE_ENV: test
         run: npm test | tee test-log.txt
 
       - name: 🔍 Run npm audit for vulnerability scan
