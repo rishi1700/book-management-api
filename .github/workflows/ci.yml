@@ -84,5 +84,4 @@ steps:
       LOGSTASH_URL: ${{ secrets.LOGSTASH_URL }}
     run: |
       curl -X POST "$LOGSTASH_URL" -H "Content-Type: application/json" -d @<(jq -n --arg lint "$(cat eslint-log.txt)" --arg test "$(cat test-log.txt)" --arg audit "$(cat audit-log.txt)" '{lint_log: $lint, test_log: $test, audit_log: $audit, timestamp: now | todate}')
-```
 
