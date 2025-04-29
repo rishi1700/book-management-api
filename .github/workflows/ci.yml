@@ -1,4 +1,4 @@
-name: CI - Lint, Test & Security
+name: CI/CD - Full DevSecOps Pipeline
 
 on:
   push:
@@ -7,6 +7,118 @@ on:
     branches: ["main"]
 
 jobs:
+  lint-test-security:
+    name: Lint, Test, and Scan
+    runs-on: ubuntu-latest
+
+    # Env for app tests
+    env:
+      DB_USER: root
+      DB_PASS: root
+      DB_NAME: book_management
+      DB_HOST: 127.0.0.1
+      DB_PORT: 3306
+      JWT_SECRET: my_secret_key
+
+    services:
+      mysql:
+        image: mysql:8.0
+        env:
+          MYSQL_ROOT_PASSWORD: root
+          MYSQL_DATABASE: book_management
+        ports:
+          - 3306:3306
+
+    steps:
+      - name: 📂 Checkout code
+        uses: actions/checkout@v3
+
+      - name: 🧠 Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: 💼 Install dependencies
+        run: npm install
+
+      - name: 🔧 Wait for MySQL
+        run: |
+          echo "Sleeping for MySQL to initialize..."
+          sleep 30
+          until mysqladmin ping -h $DB_HOST -u$DB_USER -p$DB_PASS --silent; do
+            echo "Waiting for MySQL..." && sleep 3;
+          done
+
+      - name: 🚀 Run Migrations
+        run: npx sequelize-cli db:migrate --env test
+
+      - name: ✨ Run ESLint
+        run: npm run lint
+        continue-on-error: true
+
+      - name: 📊 Run Unit Tests
+        run: npm test
+
+      - name: 🔍 Run npm audit for vulnerability scan
+        run: npm audit --audit-level=high || true
+
+      - name: 🛡️ Run OWASP Dependency Check
+        uses: dependency-check/Dependency-Check_Action@main
+        with:
+          project: "book-management-api"
+          format: "HTML"
+          out: "reports"
+
+      - name: 📄 Upload OWASP Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: dependency-check-report
+          path: reports
+
+  terraform-infra:
+    name: Validate & Deploy Cloud Infrastructure
+    runs-on: ubuntu-latest
+    needs: lint-test-security
+
+    steps:
+      - name: 📂 Checkout code
+        uses: actions/checkout@v3
+
+      - name: ⚙️ Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: 1.6.6
+
+      - name: 🔐 Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME }}
+          aws-region: us-east-1
+
+      - name: 🏗️ Terraform Init & Validate Phase 1
+        run: |
+          terraform -chdir=phase1-infra-logging init -input=false
+          terraform -chdir=phase1-infra-logging fmt -recursive
+          terraform -chdir=phase1-infra-logging validate
+
+      - name: 🏗️ Terraform Init & Validate Phase 2
+        run: |
+          terraform -chdir=phase2-iam-security-services init -input=false
+          terraform -chdir=phase2-iam-security-services fmt -recursive
+          terraform -chdir=phase2-iam-security-services validate
+
+      - name: 🏗️ Terraform Init & Validate Phase 3
+        run: |
+          terraform -chdir=phase3-threat-detection-response init -input=false
+          terraform -chdir=phase3-threat-detection-response fmt -recursive
+          terraform -chdir=phase3-threat-detection-response validate
+
+      - name: 🚀 Terraform Apply All Phases
+        run: |
+          terraform -chdir=phase1-infra-logging apply -auto-approve
+          terraform -chdir=phase2-iam-security-services apply -auto-approve
+          terraform -chdir=phase3-threat-detection-response apply -auto-approve
+
   lint-test-security:
     name: Lint, Test, and Scan
     runs-on: ubuntu-latest
