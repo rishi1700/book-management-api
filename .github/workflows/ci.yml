@@ -11,6 +11,15 @@ jobs:
     name: Lint, Test, and Scan
     runs-on: ubuntu-latest
 
+    # Environment variables for database and JWT
+    env:
+      DB_USER: root
+      DB_PASS: root
+      DB_NAME: book_management
+      DB_HOST: 127.0.0.1
+      DB_PORT: 3306
+      JWT_SECRET: my_secret_key
+
     services:
       mysql:
         image: mysql:8.0
@@ -19,7 +28,7 @@ jobs:
           MYSQL_DATABASE: book_management
         ports:
           - 3306:3306
-        options: >-
+        options: |
           --health-cmd="mysqladmin ping -uroot -proot --silent"
           --health-interval=10s
           --health-timeout=5s
@@ -29,7 +38,7 @@ jobs:
       - name: 📂 Checkout code
         uses: actions/checkout@v3
 
-      - name: 🧰 Set up Node.js
+      - name: 🧠 Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '18'
@@ -39,21 +48,16 @@ jobs:
 
       - name: 🔧 Wait for MySQL
         run: |
-          until mysqladmin ping -h 127.0.0.1 -uroot -proot --silent; do
+          until mysqladmin ping -h ${{ job.services.mysql.host }} -u$DB_USER -p$DB_PASS --silent; do
             echo "Waiting for MySQL..." && sleep 3;
           done
 
       - name: 🚀 Run Migrations
-        env:
-          DB_USER: root
-          DB_PASS: root
-          DB_NAME: book_management
-          DB_HOST: 127.0.0.1
         run: npx sequelize-cli db:migrate --env test
 
       - name: ✨ Run ESLint
-        continue-on-error: true
         run: npm run lint
+        continue-on-error: true
 
       - name: ❌ Comment on PR if Lint fails
         if: failure()
@@ -68,11 +72,6 @@ jobs:
             })
 
       - name: 📊 Run Unit Tests
-        env:
-          DB_USER: root
-          DB_PASS: root
-          DB_NAME: book_management
-          DB_HOST: 127.0.0.1
         run: npm test
 
       - name: ❌ Comment on PR if Unit Tests fail
