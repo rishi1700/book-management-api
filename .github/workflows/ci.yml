@@ -42,7 +42,9 @@ jobs:
 
       - name: 🔧 Wait for MySQL
         run: |
-          until mysqladmin ping -h ${{ job.services.mysql.host }} -u$DB_USER -p$DB_PASS --silent; do
+          echo "Sleeping for MySQL to initialize..."
+          sleep 30
+          until mysqladmin ping -h $DB_HOST -u$DB_USER -p$DB_PASS --silent; do
             echo "Waiting for MySQL..." && sleep 3;
           done
 
