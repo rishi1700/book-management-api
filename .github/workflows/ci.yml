@@ -1,4 +1,4 @@
-name: CI - Lint, Test, Security & Ship Logs
+name: CI - Full DevSecOps Pipeline
 
 on:
   push:
@@ -8,8 +8,16 @@ on:
 
 jobs:
   lint-test-security:
-    name: Lint, Test, Scan & Ship Logs
+    name: Lint, Test, Security Scan & Log Shipping
     runs-on: ubuntu-latest
+
+    env:
+      DB_USER: root
+      DB_PASS: root
+      DB_NAME: book_management
+      DB_HOST: 127.0.0.1
+      DB_PORT: 3306
+      JWT_SECRET: my_secret_key
 
     services:
       mysql:
@@ -19,9 +27,6 @@ jobs:
           MYSQL_DATABASE: book_management
         ports:
           - 3306:3306
-        options: >-
-          --health-cmd="mysqladmin ping -uroot -proot --silent" --health-interval=10s --health-timeout=5s --health-retries=5
-
 
     steps:
       - name: 📂 Checkout code
@@ -37,38 +42,20 @@ jobs:
 
       - name: 🔧 Wait for MySQL
         run: |
-          until mysqladmin ping -h 127.0.0.1 -uroot -proot --silent; do
+          echo "Sleeping for MySQL to initialize..."
+          sleep 30
+          until mysqladmin ping -h $DB_HOST -u$DB_USER -p$DB_PASS --silent; do
             echo "Waiting for MySQL..." && sleep 3;
           done
 
       - name: 🚀 Run Migrations
-        env:
-          DB_USER: root
-          DB_PASS: root
-          DB_NAME: book_management
-          DB_HOST: 127.0.0.1
-          DB_PORT: 3306
-          NODE_ENV: test
         run: npx sequelize-cli db:migrate --env test
 
       - name: ✨ Run ESLint
         continue-on-error: true
         run: npm run lint | tee eslint-log.txt
 
-      - name: 🌱 Seed Test User
-        run: |
-          sudo apt-get update && sudo apt-get install -y mysql-client
-          mysql -h 127.0.0.1 -P 3306 -u root -proot book_management < seed_test_user.sql
-
-
       - name: 📊 Run Unit Tests
-        env:
-          DB_USER: root
-          DB_PASS: root
-          DB_NAME: book_management
-          DB_HOST: 127.0.0.1
-          DB_PORT: 3306
-          NODE_ENV: test
         run: npm test | tee test-log.txt
 
       - name: 🔍 Run npm audit for vulnerability scan
@@ -88,13 +75,14 @@ jobs:
           path: reports
 
       - name: 🚀 Ship logs to Logstash
+        if: always()
         env:
           LOGSTASH_URL: ${{ secrets.LOGSTASH_URL }}
         run: |
           echo "Preparing payload..."
-          ESLINT_LOG="$(cat eslint-log.txt || echo '')"
-          TEST_LOG="$(cat test-log.txt || echo '')"
-          AUDIT_LOG="$(cat audit-log.txt || echo '')"
+          ESLINT_LOG="$(cat eslint-log.txt || echo 'no-eslint-log')"
+          TEST_LOG="$(cat test-log.txt || echo 'no-test-log')"
+          AUDIT_LOG="$(cat audit-log.txt || echo 'no-audit-log')"
 
           echo "Shipping logs to Logstash..."
           jq -n --arg lint "$ESLINT_LOG" --arg test "$TEST_LOG" --arg audit "$AUDIT_LOG" \
