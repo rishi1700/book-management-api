@@ -55,6 +55,12 @@ jobs:
         continue-on-error: true
         run: npm run lint | tee eslint-log.txt
 
+      - name: 🌱 Seed Test User
+        run: |
+          sudo apt-get update && sudo apt-get install -y mysql-client
+          mysql -h 127.0.0.1 -P 3306 -u root -proot book_management < seed_test_user.sql
+
+
       - name: 📊 Run Unit Tests
         env:
           DB_USER: root
