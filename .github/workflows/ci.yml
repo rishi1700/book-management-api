@@ -77,21 +77,8 @@ jobs:
           name: dependency-check-report
           path: reports
 
-      - name: 🚀 Ship logs to Elastic HTTP JSON
-        env:
-          ELASTIC_HTTP_URL: ${{ secrets.ELASTIC_HTTP_URL }}
-          ELASTIC_API_KEY: ${{ secrets.ELASTIC_API_KEY }}
+      - name: 🚀 Ship logs to Logstash
         run: |
-          echo "Preparing payload..."
-          ESLINT_LOG="$(cat eslint-log.txt || echo '')"
-          TEST_LOG="$(cat test-log.txt || echo '')"
-          AUDIT_LOG="$(cat audit-log.txt || echo '')"
-        
-          echo "Shipping logs..."
-          jq -n --arg lint "$ESLINT_LOG" --arg test "$TEST_LOG" --arg audit "$AUDIT_LOG" \
-          '{lint_log: $lint, test_log: $test, audit_log: $audit, timestamp: now | todate}' > payload.json
-        
-          curl -X POST "$ELASTIC_HTTP_URL" \
+          curl -X POST https://9347-80-233-38-121.ngrok-free.app \
           -H "Content-Type: application/json" \
-          -H "Authorization: ApiKey $ELASTIC_API_KEY" \
-          --data-binary @payload.json
+          -d '{"message": "Linting complete", "job": "CI", "status": "passed", "timestamp": "'$(date -u +%Y-%m-%dT%H:%M:%SZ)'"}'
