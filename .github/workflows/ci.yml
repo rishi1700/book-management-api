@@ -77,9 +77,10 @@ jobs:
           name: dependency-check-report
           path: reports
 
-      - name: 🚀 Ship logs to Elastic HTTP Endpoint
+      - name: 🚀 Ship logs to Elastic HTTP JSON
         env:
-          ELASTIC_HTTP_ENDPOINT: ${{ secrets.ELASTIC_HTTP_ENDPOINT }}
+          ELASTIC_HTTP_URL: ${{ secrets.ELASTIC_HTTP_URL }}
+          ELASTIC_API_KEY: ${{ secrets.ELASTIC_API_KEY }}
         run: |
           echo "Preparing payload..."
           ESLINT_LOG="$(cat eslint-log.txt || echo '')"
@@ -90,6 +91,7 @@ jobs:
           jq -n --arg lint "$ESLINT_LOG" --arg test "$TEST_LOG" --arg audit "$AUDIT_LOG" \
           '{lint_log: $lint, test_log: $test, audit_log: $audit, timestamp: now | todate}' > payload.json
         
-          curl -X POST "$ELASTIC_HTTP_ENDPOINT" \
+          curl -X POST "$ELASTIC_HTTP_URL" \
           -H "Content-Type: application/json" \
+          -H "Authorization: ApiKey $ELASTIC_API_KEY" \
           --data-binary @payload.json
