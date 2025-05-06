@@ -89,7 +89,7 @@ jobs:
           TEST_LOG=$(base64 test-log.txt | tr -d '\n')
           AUDIT_LOG=$(test -f audit-log.txt && base64 audit-log.txt | tr -d '\n' || echo "")
   
-          curl -X POST https://287e-80-233-38-121.ngrok-free.app \
+          curl -X POST https://04a7-80-233-34-220.ngrok-free.app \
             -H "Content-Type: application/json" \
             -d "{
               \"commit_sha\": \"${COMMIT_SHA}\",
