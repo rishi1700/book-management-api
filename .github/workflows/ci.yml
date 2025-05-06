@@ -79,6 +79,19 @@ jobs:
 
       - name: 🚀 Ship logs to Logstash
         run: |
-          curl -X POST https://9347-80-233-38-121.ngrok-free.app \
-          -H "Content-Type: application/json" \
-          -d '{"message": "Linting complete", "job": "CI", "status": "passed", "timestamp": "'$(date -u +%Y-%m-%dT%H:%M:%SZ)'"}'
+          echo "Preparing structured payload..."
+          ESLINT_LOG=$(cat eslint-log.txt | base64)
+          TEST_LOG=$(cat test-log.txt | base64)
+          AUDIT_LOG=$(cat audit-log.txt | base64)
+  
+          curl -X POST https://9347-80-233-38-121.ngrok-free.app:8080 \
+            -H "Content-Type: application/json" \
+            -d '{
+              "commit_sha": "'"${{ github.sha }}"'",
+              "repo": "'"${{ github.repository }}"'",
+              "job": "lint-test-security",
+              "timestamp": "'$(date -u +%Y-%m-%dT%H:%M:%SZ)'",
+              "eslint_log_b64": "'"$ESLINT_LOG"'",
+              "test_log_b64": "'"$TEST_LOG"'",
+              "audit_log_b64": "'"$AUDIT_LOG"'"
+            }'
