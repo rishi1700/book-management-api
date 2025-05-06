@@ -84,7 +84,7 @@ jobs:
           TEST_LOG=$(cat test-log.txt | base64)
           AUDIT_LOG=$(cat audit-log.txt | base64)
   
-          curl -X POST https://9347-80-233-38-121.ngrok-free.app:8080 \
+          curl -X POST https://287e-80-233-38-121.ngrok-free.app \
             -H "Content-Type: application/json" \
             -d '{
               "commit_sha": "'"${{ github.sha }}"'",
