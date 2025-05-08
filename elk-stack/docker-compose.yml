@@ -33,6 +33,7 @@ services:
     container_name: logstash
     volumes:
       - ./logstash/logstash.conf:/usr/share/logstash/pipeline/logstash.conf
+      - ./certs:/usr/share/logstash/config/certs:ro
     ports:
       - "5044:5044"
       - "9600:9600"
