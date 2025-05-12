@@ -64,9 +64,6 @@ resource "aws_instance" "nodejs_app" {
               sudo npm install -g pm2
               git clone https://github.com/${var.github_user}/book-management-api.git
               cd book-management-api
-              # Clone the application
-              git clone https://github.com/${var.github_user}/book-management-api.git
-              cd book-management-api
 
               # Create .env file
               cat <<EOT >> .env
