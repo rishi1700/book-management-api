@@ -27,3 +27,25 @@ coverage/
 Thumbs.db
 .vscode/
 .idea/
+
+# Ignore Terraform state files
+*.tfstate
+*.tfstate.*
+
+# Crash logs
+crash.log
+
+
+# Terraform plan output
+*.tfplan
+
+# Terraform CLI configuration
+.terraform/
+.terraform.lock.hcl
+
+# Sensitive variable files
+*.tfvars
+*.tfvars.json
+
+# Backup files
+*.backup
