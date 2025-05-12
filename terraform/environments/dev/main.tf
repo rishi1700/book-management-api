@@ -57,10 +57,28 @@ resource "aws_instance" "nodejs_app" {
               #!/bin/bash
               sudo apt update -y
               curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
-              sudo apt-get install -y nodejs git
+              sudo apt-get install -y nodejs git mysql-server
+              sudo systemctl start mysql
+              sudo systemctl enable mysql
+              sudo mysql -e "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'P@ssw0rd'; FLUSH PRIVILEGES; CREATE DATABASE IF NOT EXISTS book_management;"
               sudo npm install -g pm2
               git clone https://github.com/${var.github_user}/book-management-api.git
               cd book-management-api
+              # Clone the application
+              git clone https://github.com/${var.github_user}/book-management-api.git
+              cd book-management-api
+
+              # Create .env file
+              cat <<EOT >> .env
+              DB_USER=root
+              DB_PASS=P@ssw0rd
+              DB_NAME=book_management
+              DB_HOST=127.0.0.1
+              DB_PORT=3306
+              JWT_SECRET=my_secret_key
+              NODE_ENV=production
+              EOT
+
               npm install
               pm2 start src/app.js --name book-api
               pm2 save
