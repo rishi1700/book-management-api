@@ -55,17 +55,25 @@ resource "aws_instance" "nodejs_app" {
 
   user_data = <<-EOF
               #!/bin/bash
+
+              # Update and install required packages
               sudo apt update -y
               curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
               sudo apt-get install -y nodejs git mysql-server
+
+              # Start and configure MySQL with root password
               sudo systemctl start mysql
               sudo systemctl enable mysql
               sudo mysql -e "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'P@ssw0rd'; FLUSH PRIVILEGES; CREATE DATABASE IF NOT EXISTS book_management;"
+
+              # Install PM2 globally
               sudo npm install -g pm2
+
+              # Clone your Node.js app
               git clone https://github.com/${var.github_user}/book-management-api.git
               cd book-management-api
 
-              # Create .env file
+              # Create .env file for DB config
               cat <<EOT >> .env
               DB_USER=root
               DB_PASS=P@ssw0rd
@@ -76,7 +84,10 @@ resource "aws_instance" "nodejs_app" {
               NODE_ENV=production
               EOT
 
+              # Install app dependencies
               npm install
+
+              # Start app with PM2 only (no background node processes)
               pm2 start src/app.js --name book-api
               pm2 save
               EOF
