@@ -86,7 +86,7 @@ resource "aws_instance" "nodejs_app" {
 
               # Install app dependencies
               npm install
-
+              sleep 10
               # Start app with PM2 only (no background node processes)
               pm2 start src/app.js --name book-api
               pm2 save
