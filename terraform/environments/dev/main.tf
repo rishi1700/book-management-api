@@ -105,14 +105,23 @@ resource "aws_instance" "nodejs_app" {
               }
               EOT
 
-              # Kill rogue node processes just in case
-              pkill node || true
-              sleep 5
-
-              # Start app with PM2 ecosystem
+              # Create post-boot setup script for PM2
+              cat <<EOT >> /home/ubuntu/setup-app.sh
+              #!/bin/bash
+              cd /home/ubuntu/book-management-api
               /usr/bin/pm2 start ecosystem.config.js
               /usr/bin/pm2 save
               /usr/bin/pm2 startup systemd -u ubuntu --hp /home/ubuntu
+              EOT
+
+              chmod +x /home/ubuntu/setup-app.sh
+              chown ubuntu:ubuntu /home/ubuntu/setup-app.sh
+
+              # Add to crontab for execution on reboot
+              crontab -l > mycron || true
+              echo "@reboot /home/ubuntu/setup-app.sh" >> mycron
+              crontab mycron
+              rm mycron
               EOF
 
   tags = {
