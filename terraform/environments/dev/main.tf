@@ -83,7 +83,8 @@ resource "aws_instance" "nodejs_app" {
               JWT_SECRET=my_secret_key
               NODE_ENV=production
               EOT
-
+              # Install dependencies without triggering postinstall/start
+              npm install --ignore-scripts
               # Install app dependencies
               npm install
               # Ensure no rogue node process starts the app automatically
