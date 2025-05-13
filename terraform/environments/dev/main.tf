@@ -86,8 +86,11 @@ resource "aws_instance" "nodejs_app" {
 
               # Install app dependencies
               npm install
-              sleep 10
-              # Start app with PM2 only (no background node processes)
+              # Ensure no rogue node process starts the app automatically
+              pkill node || true
+              sleep 5
+              # Start app via PM2
+              export PATH=$PATH:/usr/bin:/usr/local/bin
               /usr/bin/pm2 start src/app.js --name book-api
               /usr/bin/pm2 save
               /usr/bin/pm2 startup systemd -u ubuntu --hp /home/ubuntu
