@@ -88,10 +88,9 @@ resource "aws_instance" "nodejs_app" {
               npm install
               sleep 10
               # Start app with PM2 only (no background node processes)
-              export PATH=$PATH:/usr/bin:/usr/local/bin
-              pm2 start src/app.js --name book-api
-              pm2 save
-              pm2 startup systemd -u ubuntu --hp /home/ubuntu
+              /usr/bin/pm2 start src/app.js --name book-api
+              /usr/bin/pm2 save
+              /usr/bin/pm2 startup systemd -u ubuntu --hp /home/ubuntu
               EOF
 
   tags = {
