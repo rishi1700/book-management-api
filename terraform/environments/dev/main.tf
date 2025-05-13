@@ -83,16 +83,34 @@ resource "aws_instance" "nodejs_app" {
               JWT_SECRET=my_secret_key
               NODE_ENV=production
               EOT
-              # Install dependencies without triggering postinstall/start
+              # Install dependencies without triggering postinstall scripts
               npm install --ignore-scripts
-              # Install app dependencies
-              npm install
-              # Ensure no rogue node process starts the app automatically
+
+              # Create PM2 ecosystem config file
+              cat <<EOT >> ecosystem.config.js
+              module.exports = {
+                apps: [{
+                  name: "book-api",
+                  script: "src/app.js",
+                  env: {
+                    DB_USER: "root",
+                    DB_PASS: "P@ssw0rd",
+                    DB_NAME: "book_management",
+                    DB_HOST: "127.0.0.1",
+                    DB_PORT: "3306",
+                    JWT_SECRET: "my_secret_key",
+                    NODE_ENV: "production"
+                  }
+                }]
+              }
+              EOT
+
+              # Kill rogue node processes just in case
               pkill node || true
               sleep 5
-              # Start app via PM2
-              export PATH=$PATH:/usr/bin:/usr/local/bin
-              /usr/bin/pm2 start src/app.js --name book-api
+
+              # Start app with PM2 ecosystem
+              /usr/bin/pm2 start ecosystem.config.js
               /usr/bin/pm2 save
               /usr/bin/pm2 startup systemd -u ubuntu --hp /home/ubuntu
               EOF
