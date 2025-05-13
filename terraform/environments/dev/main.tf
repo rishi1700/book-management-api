@@ -113,7 +113,7 @@ resource "aws_instance" "nodejs_app" {
               /usr/bin/pm2 save
               /usr/bin/pm2 startup systemd -u ubuntu --hp /home/ubuntu
               EOT
-
+              chown -R ubuntu:ubuntu /home/ubuntu/book-management-api
               chmod +x /home/ubuntu/setup-app.sh
               chown ubuntu:ubuntu /home/ubuntu/setup-app.sh
 
